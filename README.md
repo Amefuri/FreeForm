@@ -6,12 +6,12 @@
 [![Platform](https://img.shields.io/cocoapods/p/FreeForm.svg?style=flat)](http://cocoapods.org/pods/FreeForm)
 
 ## Todo List
-[X] TextField Row
-[X] TextView Row 
-[X] Segmented Row
-[X] Button Row
-[ ] Datetime Row
-[ ] Push Options Row
+- [X] TextField Row
+- [X] TextView Row 
+- [X] Segmented Row
+- [X] Button Row
+- [ ] Datetime Row
+- [ ] Push Options Row
 
 ## Example
 
