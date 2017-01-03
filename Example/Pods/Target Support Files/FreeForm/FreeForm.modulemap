@@ -1,0 +1,6 @@
+framework module FreeForm {
+  umbrella header "FreeForm-umbrella.h"
+
+  export *
+  module * { export * }
+}

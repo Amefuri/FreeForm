@@ -1,0 +1,6 @@
+framework module Pods_FreeForm_Example {
+  umbrella header "Pods-FreeForm_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

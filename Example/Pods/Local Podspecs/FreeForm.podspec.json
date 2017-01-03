@@ -1,0 +1,27 @@
+{
+  "name": "FreeForm",
+  "version": "0.1.0",
+  "summary": "A simple block-based form viewcontroller.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/clonezer/FreeForm",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Peerasak Unsakon": "clonezer@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/clonezer/FreeForm.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FreeForm/Classes/**/*",
+  "resource_bundles": {
+    "FreeForm": [
+      "FreeForm/Classes/*.xib"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - FreeForm (0.1.0)
+
+DEPENDENCIES:
+  - FreeForm (from `../`)
+
+EXTERNAL SOURCES:
+  FreeForm:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FreeForm: ce7cd313cdf51124d3f10d6cf08614d1bac889e8
+
+PODFILE CHECKSUM: ed042c5aa02bd11f5a0f0a6823f2ac01786244ad
+
+COCOAPODS: 1.1.1
