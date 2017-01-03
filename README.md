@@ -5,6 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/FreeForm.svg?style=flat)](http://cocoapods.org/pods/FreeForm)
 [![Platform](https://img.shields.io/cocoapods/p/FreeForm.svg?style=flat)](http://cocoapods.org/pods/FreeForm)
 
+## Todo List
+[X] TextField Row
+[X] TextView Row 
+[X] Segmented Row
+[X] Button Row
+[ ] Datetime Row
+[ ] Push Options Row
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
