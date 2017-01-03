@@ -19,6 +19,9 @@
 		3DC46BAA2E4EC6A2B6E9D37A74B05D9B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565ECA78D8CF479EBFA88C29C938BC7 /* ReplaceMe.swift */; };
 		45526B8B45E78B439F6B5FE8BE83133C /* FreeFormTextViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8421F4873F72F7F69BBFE9C74DB63FC5 /* FreeFormTextViewCell.xib */; };
 		539A275851AF1D1A91C083F7108E6C6F /* FreeForm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FA73ACED5F9D65C98EA66B2F86F512 /* FreeForm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63675C891E1B9BE9009DB4B0 /* FreeFormButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675C871E1B9BE9009DB4B0 /* FreeFormButtonCell.swift */; };
+		63675C8A1E1B9BE9009DB4B0 /* FreeFormButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C881E1B9BE9009DB4B0 /* FreeFormButtonCell.xib */; };
+		63675C8B1E1BA102009DB4B0 /* FreeFormButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C881E1B9BE9009DB4B0 /* FreeFormButtonCell.xib */; };
 		66124DBFCB4953355088765F73CC6CAF /* FreeFormSegmentedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99C08AD63DEFE2D2DAE975F686CF361 /* FreeFormSegmentedCell.xib */; };
 		68BDB64872C97B52724787EB9A9CD0FB /* FreeFormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56694C83E73389968470915D311500 /* FreeFormTextFieldCell.swift */; };
 		8E65BBAFBB4DA47AB0A03F50EF42125C /* FreeForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBFC26FF7714FBE8D98C5C3E3F4447 /* FreeForm-dummy.m */; };
@@ -53,7 +56,7 @@
 		07A260659C0D6787A333D6128604F93E /* Pods-FreeForm_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeForm_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0BDBFC26FF7714FBE8D98C5C3E3F4447 /* FreeForm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FreeForm-dummy.m"; sourceTree = "<group>"; };
 		0F6E4BE7E90FACE5405C0B146FD051C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1514C5A10408A16E0CD1CB3905A87AE0 /* FreeForm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FreeForm.modulemap; sourceTree = "<group>"; };
+		1514C5A10408A16E0CD1CB3905A87AE0 /* FreeForm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FreeForm.modulemap; sourceTree = "<group>"; };
 		1C77FE81F0036071F3BB060F16536C35 /* FreeFormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormViewController.swift; sourceTree = "<group>"; };
 		23ACBC9F3FEFDFF7A40CE5322A69EF55 /* ResourceBundle-FreeForm-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FreeForm-Info.plist"; sourceTree = "<group>"; };
 		2950DB6D8A7450900895029EE7C12C5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,8 +64,8 @@
 		29E48ACF52E9770E348CC47AA29FF851 /* Pods-FreeForm_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreeForm_Example-resources.sh"; sourceTree = "<group>"; };
 		30855BAC371F79FF0A2A895F5CC3490C /* FreeForm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FreeForm-prefix.pch"; sourceTree = "<group>"; };
 		31475F9DBD1FCC7E5CB2B7CA129E9954 /* FreeFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormCell.swift; sourceTree = "<group>"; };
-		3D6FECF60E5CD694921FC90614EB6A68 /* Pods-FreeForm_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FreeForm_Tests.modulemap"; sourceTree = "<group>"; };
-		40594B3227C69215118AFCAF91827A68 /* FreeForm.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FreeForm.bundle; path = FreeForm.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6FECF60E5CD694921FC90614EB6A68 /* Pods-FreeForm_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FreeForm_Tests.modulemap"; sourceTree = "<group>"; };
+		40594B3227C69215118AFCAF91827A68 /* FreeForm.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeForm.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		430A6BC10A6E7497ECF7C51A7E726B13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4604C6F37B5ADB874BE996AC61F490C0 /* FreeForm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FreeForm.xcconfig; sourceTree = "<group>"; };
 		4DE392B51386D451A599DCAA5DC67144 /* Pods-FreeForm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeForm_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,19 +74,21 @@
 		5AEECEB0AF77F44E89F809EE2874D00C /* Pods-FreeForm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeForm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D2E50DC9A22F9BD2AACAB93D8869609 /* Pods-FreeForm_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreeForm_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		5E1088651EF5C4496F3ABE4B410D716B /* Pods-FreeForm_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FreeForm_Tests-dummy.m"; sourceTree = "<group>"; };
-		5F8DB0D8BD16AA5EA46861F872A86DF9 /* Pods_FreeForm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FreeForm_Example.framework; path = "Pods-FreeForm_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F8DB0D8BD16AA5EA46861F872A86DF9 /* Pods_FreeForm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeForm_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63675C871E1B9BE9009DB4B0 /* FreeFormButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormButtonCell.swift; sourceTree = "<group>"; };
+		63675C881E1B9BE9009DB4B0 /* FreeFormButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormButtonCell.xib; sourceTree = "<group>"; };
 		75A58ADD89F0841AE94270BEED1E4DB8 /* Pods-FreeForm_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FreeForm_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8421F4873F72F7F69BBFE9C74DB63FC5 /* FreeFormTextViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormTextViewCell.xib; sourceTree = "<group>"; };
 		87460B3660C157DFEA3165489C86A3D1 /* Pods-FreeForm_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FreeForm_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8D3D7F8263F64E505B29DEF841A9BA24 /* Pods-FreeForm_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreeForm_Tests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A1643E99D7ACDCCBCE5DDDEF425CF35 /* Pods_FreeForm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FreeForm_Tests.framework; path = "Pods-FreeForm_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A1643E99D7ACDCCBCE5DDDEF425CF35 /* Pods_FreeForm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeForm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D72BB6EE65BB669ACE9B44B3651A0D8 /* FreeForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeForm.swift; sourceTree = "<group>"; };
 		A565ECA78D8CF479EBFA88C29C938BC7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		A8AECB1565CA7CB3F077CD0840890E07 /* Pods-FreeForm_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeForm_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A99C08AD63DEFE2D2DAE975F686CF361 /* FreeFormSegmentedCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormSegmentedCell.xib; sourceTree = "<group>"; };
 		AF56694C83E73389968470915D311500 /* FreeFormTextFieldCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormTextFieldCell.swift; sourceTree = "<group>"; };
-		C12903A4D2F04DF25A90FB3ECF6FADBD /* FreeForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FreeForm.framework; path = FreeForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12903A4D2F04DF25A90FB3ECF6FADBD /* FreeForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FreeForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FA73ACED5F9D65C98EA66B2F86F512 /* FreeForm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FreeForm-umbrella.h"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CBE64645911117F609C2EA14CAC42B90 /* FreeFormTextViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormTextViewCell.swift; sourceTree = "<group>"; };
@@ -91,7 +96,7 @@
 		D0E17D8E478389E69D16D66B2B5A6E0E /* Pods-FreeForm_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FreeForm_Example-umbrella.h"; sourceTree = "<group>"; };
 		EADF05510361C32523611E9D7F430DE7 /* Pods-FreeForm_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FreeForm_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EFED21FC2220BE05142AA0243943F42E /* Pods-FreeForm_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FreeForm_Tests-umbrella.h"; sourceTree = "<group>"; };
-		FB6704A5C1D2F38B2059844A0F6F78BD /* Pods-FreeForm_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FreeForm_Example.modulemap"; sourceTree = "<group>"; };
+		FB6704A5C1D2F38B2059844A0F6F78BD /* Pods-FreeForm_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FreeForm_Example.modulemap"; sourceTree = "<group>"; };
 		FF039A7BEA0273F9EB1E76BD580FB65F /* Pods-FreeForm_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FreeForm_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +169,8 @@
 			children = (
 				9D72BB6EE65BB669ACE9B44B3651A0D8 /* FreeForm.swift */,
 				31475F9DBD1FCC7E5CB2B7CA129E9954 /* FreeFormCell.swift */,
+				63675C871E1B9BE9009DB4B0 /* FreeFormButtonCell.swift */,
+				63675C881E1B9BE9009DB4B0 /* FreeFormButtonCell.xib */,
 				50D5CF83F901EF4C4543AB32A3083FA5 /* FreeFormSegmentedCell.swift */,
 				A99C08AD63DEFE2D2DAE975F686CF361 /* FreeFormSegmentedCell.xib */,
 				AF56694C83E73389968470915D311500 /* FreeFormTextFieldCell.swift */,
@@ -173,7 +180,6 @@
 				1C77FE81F0036071F3BB060F16536C35 /* FreeFormViewController.swift */,
 				A565ECA78D8CF479EBFA88C29C938BC7 /* ReplaceMe.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -261,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -270,7 +275,6 @@
 			children = (
 				7F4AA68C34D86C8F98A768DED9E57574 /* Classes */,
 			);
-			name = FreeForm;
 			path = FreeForm;
 			sourceTree = "<group>";
 		};
@@ -279,7 +283,6 @@
 			children = (
 				2182F371D392DC39B159B64CA7711E2B /* Classes */,
 			);
-			name = FreeForm;
 			path = FreeForm;
 			sourceTree = "<group>";
 		};
@@ -435,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66124DBFCB4953355088765F73CC6CAF /* FreeFormSegmentedCell.xib in Resources */,
+				63675C8B1E1BA102009DB4B0 /* FreeFormButtonCell.xib in Resources */,
 				3211BFABE0CABDD23F714BF7A7EE0996 /* FreeFormTextFieldCell.xib in Resources */,
 				3825C39BBF1701A4A4633C2200E22D8F /* FreeFormTextViewCell.xib in Resources */,
 			);
@@ -445,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C0D252AFCF3647DBB384A29B3F15DC3 /* FreeForm.bundle in Resources */,
+				63675C8A1E1B9BE9009DB4B0 /* FreeFormButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +480,7 @@
 				1AB6704D81979B44CFFE91444847716A /* FreeFormCell.swift in Sources */,
 				20B8ED2446A8BBE4F607AD90124D0A88 /* FreeFormSegmentedCell.swift in Sources */,
 				CBFC7BC44D16C9F55DF1A99635DD8471 /* FreeFormSegmentedCell.xib in Sources */,
+				63675C891E1B9BE9009DB4B0 /* FreeFormButtonCell.swift in Sources */,
 				68BDB64872C97B52724787EB9A9CD0FB /* FreeFormTextFieldCell.swift in Sources */,
 				C5ACE3168C529D8029C2DD4617EEE9FE /* FreeFormTextFieldCell.xib in Sources */,
 				038A1655FC49FD66FAE057601C005BE7 /* FreeFormTextViewCell.swift in Sources */,

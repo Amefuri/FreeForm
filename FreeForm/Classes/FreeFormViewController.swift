@@ -29,7 +29,7 @@ open class FreeFormViewController: UITableViewController {
     }
 
     open func registerNibName() {
-        let cellNames = ["FreeFormTextFieldCell", "FreeFormTextViewCell", "FreeFormSegmentedCell"]
+        let cellNames = ["FreeFormTextFieldCell", "FreeFormTextViewCell", "FreeFormSegmentedCell", "FreeFormButtonCell"]
         let nibNames = self.form.getRowNibNames()
         let podBundle = Bundle(for: FreeFormViewController.self)
         let bundleURL = podBundle.url(forResource: "FreeForm", withExtension: "bundle")

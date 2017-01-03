@@ -10,22 +10,16 @@ import UIKit
 import FreeForm
 
 class ViewController: FreeFormViewController {
+    
     var section1 = FreeFormSection(tag: "Demo1", title: "Demo1")
     var section2 = FreeFormSection(tag: "Demo2", title: "Demo2")
+    var section3 = FreeFormSection(tag: "Demo3", title: "Demo3")
     
-    let firstname = FreeFormTextFieldRow(tag: "FirstName",
-                                         title: "FirstName",
-                                         value: nil)
-    let lastname = FreeFormTextFieldRow(tag: "LastName",
-                                        title: "LastName",
-                                        value: nil)
-    let textView = FreeFormTextViewRow(tag: "TextView",
-                                       title: "Detail",
-                                       value: nil)
-    let segmented = FreeFormSegmentedRow(tag: "Segmented",
-                                         title: "Segmented",
-                                         value: "Hello",
-                                         options: ["Hello", "Bye!"])
+    let firstname = FreeFormTextFieldRow(tag: "FirstName", title: "FirstName", value: nil)
+    let lastname = FreeFormTextFieldRow(tag: "LastName", title: "LastName", value: nil)
+    let textView = FreeFormTextViewRow(tag: "TextView", title: "Detail", value: nil)
+    let segmented = FreeFormSegmentedRow(tag: "Segmented", title: "Segmented", value: "Hello", options: ["Hello", "Bye!"])
+    let button = FreeFormButtonRow(tag: "Button", title: "Tap Me!!")
     
     override func initializeForm() {
         
@@ -45,8 +39,15 @@ class ViewController: FreeFormViewController {
             return section
         }()
         
+        self.section3 = {
+            let section = self.section3
+            section.addRow(self.button)
+            return section
+        }()
+        
         self.form.addSection(self.section1)
         self.form.addSection(self.section2)
+        self.form.addSection(self.section3)
         
         self.firstname.customCell = { cell in
             guard let textfieldCell = cell as? FreeFormTextFieldCell else { return }
@@ -70,7 +71,6 @@ class ViewController: FreeFormViewController {
         
         self.segmented.customCell = { cell in
             guard let segmentedCell = cell as? FreeFormSegmentedCell else { return }
-            segmentedCell.backgroundColor = UIColor.lightGray
             segmentedCell.segmentedControl.tintColor = UIColor.red
         }
         
@@ -83,6 +83,16 @@ class ViewController: FreeFormViewController {
                 self.lastname.hidden = false
                 self.textView.height = 110
             }
+            self.form.reloadForm(true)
+        }
+        
+        self.button.customCell = { cell in
+            guard let buttonCell = cell as? FreeFormButtonCell else { return }
+            buttonCell.backgroundColor = UIColor.cyan
+        }
+        
+        self.button.didTapped = { row in
+            self.button.title = (self.button.title == "Tap Me!!" ? "Yes! One more time" : "Tap Me!!")
             self.form.reloadForm(true)
         }
         
