@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FreeForm_Example' do
+  pod 'FreeForm', :path => '../'
+
+  target 'FreeForm_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
