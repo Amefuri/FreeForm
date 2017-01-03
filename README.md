@@ -10,8 +10,12 @@
 - [X] TextView Row 
 - [X] Segmented Row
 - [X] Button Row
+- [ ] Text Row
+- [ ] Switch Row
+- [ ] Stepper Row
 - [ ] Datetime Row
 - [ ] Push Options Row
+- [ ] Custom Row
 
 ## Example
 
