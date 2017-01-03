@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="FreeFormStepperCell" customModule="FreeForm" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3re-dg-M6Y">
+                        <rect key="frame" x="278.5" y="8" width="33.5" height="34"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="qgO-yL-MAu"/>
+                            <constraint firstAttribute="height" constant="34" id="ugs-UU-ZA4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <state key="normal" title="+">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="addButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="10Y-dH-uT5"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITF-3Y-djb">
+                        <rect key="frame" x="246.5" y="14" width="22" height="22"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="-">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="subtractButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bDf-sZ-qg7"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dia-do-Ai3">
+                        <rect key="frame" x="8" y="14.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3re-dg-M6Y" firstAttribute="leading" secondItem="ITF-3Y-djb" secondAttribute="trailing" constant="10" id="1hf-up-kir"/>
+                    <constraint firstItem="ITF-3Y-djb" firstAttribute="width" secondItem="3re-dg-M6Y" secondAttribute="width" multiplier="0.65" id="1ki-Kg-xhp"/>
+                    <constraint firstItem="ITF-3Y-djb" firstAttribute="centerY" secondItem="3re-dg-M6Y" secondAttribute="centerY" id="3vp-uo-Gdi"/>
+                    <constraint firstItem="3re-dg-M6Y" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8jL-Oh-zgA"/>
+                    <constraint firstItem="dia-do-Ai3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qvg-7V-jOg"/>
+                    <constraint firstAttribute="trailing" secondItem="3re-dg-M6Y" secondAttribute="trailing" constant="8" id="kUW-dr-zVr"/>
+                    <constraint firstItem="ITF-3Y-djb" firstAttribute="height" secondItem="3re-dg-M6Y" secondAttribute="height" multiplier="0.65" id="mWg-VC-0K2"/>
+                    <constraint firstItem="dia-do-Ai3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="vgM-Gy-gxj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addButton" destination="3re-dg-M6Y" id="xQJ-mi-afX"/>
+                <outlet property="subtractButton" destination="ITF-3Y-djb" id="R0u-e1-A8K"/>
+                <outlet property="titleLabel" destination="dia-do-Ai3" id="qc9-RH-OQ9"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

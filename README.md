@@ -10,9 +10,9 @@
 - [X] TextView Row 
 - [X] Segmented Row
 - [X] Button Row
+- [X] Stepper Row
 - [ ] Text Row
 - [ ] Switch Row
-- [ ] Stepper Row
 - [ ] Datetime Row
 - [ ] Push Options Row
 - [ ] Custom Row

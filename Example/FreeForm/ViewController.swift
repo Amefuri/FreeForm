@@ -20,6 +20,7 @@ class ViewController: FreeFormViewController {
     let textView = FreeFormTextViewRow(tag: "TextView", title: "Detail", value: nil)
     let segmented = FreeFormSegmentedRow(tag: "Segmented", title: "Segmented", value: "Hello", options: ["Hello", "Bye!"])
     let button = FreeFormButtonRow(tag: "Button", title: "Tap Me!!")
+    let stepper = FreeFormStepperRow(tag: "Stepper", title: "Stepper", max: 10, min: 0, value: 0)
     
     override func initializeForm() {
         
@@ -42,6 +43,7 @@ class ViewController: FreeFormViewController {
         self.section3 = {
             let section = self.section3
             section.addRow(self.button)
+            section.addRow(self.stepper)
             return section
         }()
         
