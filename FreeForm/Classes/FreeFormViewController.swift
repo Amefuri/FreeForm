@@ -29,7 +29,7 @@ open class FreeFormViewController: UITableViewController {
     }
 
     open func registerNibName() {
-        let cellNames = ["FreeFormTextFieldCell", "FreeFormTextViewCell", "FreeFormSegmentedCell", "FreeFormButtonCell", "FreeFormStepperCell", "FreeFormTextCell", "FreeFormSwitchCell"]
+        let cellNames = ["FreeFormTextFieldCell", "FreeFormTextViewCell", "FreeFormSegmentedCell", "FreeFormButtonCell", "FreeFormStepperCell", "FreeFormTextCell", "FreeFormSwitchCell", "FreeFormDatetimeCell"]
         let nibNames = self.form.getRowNibNames()
         let podBundle = Bundle(for: FreeFormViewController.self)
         let bundleURL = podBundle.url(forResource: "FreeForm", withExtension: "bundle")
@@ -68,6 +68,7 @@ open class FreeFormViewController: UITableViewController {
 
     override open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let row = self.form.getRow(indexPath)
+        row.formViewController = self
         let cell = tableView.dequeueReusableCell(withIdentifier: row.cellType, for: indexPath) as! FreeFormCell
         cell.setRowData(row)
         return cell

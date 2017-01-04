@@ -18,6 +18,10 @@ class ViewController: FreeFormViewController {
     let firstname = FreeFormTextFieldRow(tag: "FirstName", title: "FirstName", value: nil)
     let lastname = FreeFormTextFieldRow(tag: "LastName", title: "LastName", value: nil)
     let text = FreeFormTextRow(tag: "Text", title: "Fullname", value: nil)
+    let datetime = FreeFormDatetimeRow(tag: "Datetime", title: "Date", selectedDate: Date(),
+                                       min: Calendar.current.date(byAdding: .day, value: -10, to: Date()),
+                                       max: Calendar.current.date(byAdding: .day, value: 10, to: Date()))
+    
     let textView = FreeFormTextViewRow(tag: "TextView", title: "Detail", value: nil)
     let segmented = FreeFormSegmentedRow(tag: "Segmented", title: "Segmented", value: "Hello", options: ["Hello", "Bye!"])
     let button = FreeFormButtonRow(tag: "Button", title: "Tap Me!!")
@@ -33,6 +37,7 @@ class ViewController: FreeFormViewController {
             section.addRow(self.firstname)
             section.addRow(self.lastname)
             section.addRow(self.text)
+            section.addRow(self.datetime)
             return section
         }()
         

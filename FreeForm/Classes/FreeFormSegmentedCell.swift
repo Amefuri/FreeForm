@@ -24,10 +24,6 @@ public class FreeFormSegmentedCell: FreeFormCell {
     @IBOutlet weak public var titleLabel: UILabel!
     @IBOutlet weak public var segmentedControl: UISegmentedControl!
     
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     override public func update() {
         super.update()
         guard let row = self.row as? FreeFormSegmentedRow else { return }

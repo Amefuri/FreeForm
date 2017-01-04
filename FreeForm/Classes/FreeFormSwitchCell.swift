@@ -28,10 +28,6 @@ public class FreeFormSwitchCell: FreeFormCell {
     
     @IBOutlet public weak var cellSwitch: UISwitch!
     
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     override public func update() {
         guard let row = self.row as? FreeFormSwitchRow else { return }
         self.titleLabel.text = row.title

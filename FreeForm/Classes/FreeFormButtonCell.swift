@@ -19,10 +19,6 @@ public class FreeFormButtonCell: FreeFormCell {
 
     @IBOutlet public weak var button: UIButton!
     
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     override public func update() {
         super.update()
         guard let row = self.row as? FreeFormButtonRow else { return }

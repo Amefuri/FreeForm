@@ -20,10 +20,6 @@ public class FreeFormTextCell: FreeFormCell {
     @IBOutlet public weak var titleLabel: UILabel!
     @IBOutlet public weak var valueLabel: UILabel!
     
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     override public func update() {
         guard let row = self.row as? FreeFormTextRow else {
             self.titleLabel.text = ""

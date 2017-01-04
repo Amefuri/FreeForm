@@ -95,6 +95,7 @@ open class FreeFormRow: NSObject {
     public var didDeleted: FreeFormRowBlock?
     
     public var cell: FreeFormCell?
+    public var formViewController: FreeFormViewController!
     
     init(tag: String, title: String, value: AnyObject?) {
         self.tag = tag
