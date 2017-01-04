@@ -32,7 +32,7 @@ FreeForm is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "FreeForm"
+pod 'FreeForm', :git => 'https://github.com/clonezer/FreeForm.git'
 ```
 
 ## Author
