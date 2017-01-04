@@ -27,6 +27,9 @@
 		63675C951E1CC4D7009DB4B0 /* FreeFormTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675C931E1CC4D7009DB4B0 /* FreeFormTextCell.swift */; };
 		63675C961E1CC4D7009DB4B0 /* FreeFormTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */; };
 		63675C971E1CC4E3009DB4B0 /* FreeFormTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */; };
+		63675C9A1E1CE0F8009DB4B0 /* FreeFormSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675C981E1CE0F8009DB4B0 /* FreeFormSwitchCell.swift */; };
+		63675C9B1E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C991E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib */; };
+		63675C9C1E1CE102009DB4B0 /* FreeFormSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C991E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib */; };
 		66124DBFCB4953355088765F73CC6CAF /* FreeFormSegmentedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99C08AD63DEFE2D2DAE975F686CF361 /* FreeFormSegmentedCell.xib */; };
 		68BDB64872C97B52724787EB9A9CD0FB /* FreeFormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56694C83E73389968470915D311500 /* FreeFormTextFieldCell.swift */; };
 		8E65BBAFBB4DA47AB0A03F50EF42125C /* FreeForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBFC26FF7714FBE8D98C5C3E3F4447 /* FreeForm-dummy.m */; };
@@ -86,6 +89,8 @@
 		63675C8E1E1BA7C5009DB4B0 /* FreeFormStepperCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormStepperCell.xib; sourceTree = "<group>"; };
 		63675C931E1CC4D7009DB4B0 /* FreeFormTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormTextCell.swift; sourceTree = "<group>"; };
 		63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormTextCell.xib; sourceTree = "<group>"; };
+		63675C981E1CE0F8009DB4B0 /* FreeFormSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormSwitchCell.swift; sourceTree = "<group>"; };
+		63675C991E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormSwitchCell.xib; sourceTree = "<group>"; };
 		75A58ADD89F0841AE94270BEED1E4DB8 /* Pods-FreeForm_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FreeForm_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8421F4873F72F7F69BBFE9C74DB63FC5 /* FreeFormTextViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormTextViewCell.xib; sourceTree = "<group>"; };
 		87460B3660C157DFEA3165489C86A3D1 /* Pods-FreeForm_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FreeForm_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -190,6 +195,8 @@
 				63675C8E1E1BA7C5009DB4B0 /* FreeFormStepperCell.xib */,
 				63675C931E1CC4D7009DB4B0 /* FreeFormTextCell.swift */,
 				63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */,
+				63675C981E1CE0F8009DB4B0 /* FreeFormSwitchCell.swift */,
+				63675C991E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -458,6 +465,7 @@
 				63675C971E1CC4E3009DB4B0 /* FreeFormTextCell.xib in Resources */,
 				63675C8B1E1BA102009DB4B0 /* FreeFormButtonCell.xib in Resources */,
 				3211BFABE0CABDD23F714BF7A7EE0996 /* FreeFormTextFieldCell.xib in Resources */,
+				63675C9C1E1CE102009DB4B0 /* FreeFormSwitchCell.xib in Resources */,
 				3825C39BBF1701A4A4633C2200E22D8F /* FreeFormTextViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +478,7 @@
 				63675C911E1BA7C5009DB4B0 /* FreeFormStepperCell.xib in Resources */,
 				0C0D252AFCF3647DBB384A29B3F15DC3 /* FreeForm.bundle in Resources */,
 				63675C8A1E1B9BE9009DB4B0 /* FreeFormButtonCell.xib in Resources */,
+				63675C9B1E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +515,7 @@
 				68BDB64872C97B52724787EB9A9CD0FB /* FreeFormTextFieldCell.swift in Sources */,
 				C5ACE3168C529D8029C2DD4617EEE9FE /* FreeFormTextFieldCell.xib in Sources */,
 				038A1655FC49FD66FAE057601C005BE7 /* FreeFormTextViewCell.swift in Sources */,
+				63675C9A1E1CE0F8009DB4B0 /* FreeFormSwitchCell.swift in Sources */,
 				45526B8B45E78B439F6B5FE8BE83133C /* FreeFormTextViewCell.xib in Sources */,
 				C02A4EAB4D96352C06B0C99551F0BA98 /* FreeFormViewController.swift in Sources */,
 			);

@@ -58,8 +58,10 @@ public class FreeFormStepperCell: FreeFormCell {
         }
         
         row.value = ((row.value as! Int) + 1) as AnyObject?
-        
         self.update()
+        
+        guard let block = row.didChanged else { return }
+        block(row.value as AnyObject, row)
     }
     
     @IBAction func subtractButtonTapped(_ sender: Any) {
@@ -72,6 +74,9 @@ public class FreeFormStepperCell: FreeFormCell {
         }
         row.value = ((row.value as! Int) - 1) as AnyObject?
         self.update()
+        
+        guard let block = row.didChanged else { return }
+        block(row.value as AnyObject, row)
     }
     
 }

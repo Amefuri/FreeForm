@@ -12,10 +12,11 @@
 - [X] Button Row
 - [X] Stepper Row
 - [X] Text Row
-- [ ] Switch Row
+- [X] Switch Row
 - [ ] Datetime Row
 - [ ] Push Options Row
 - [ ] Custom Row
+- [ ] Hidden/Show Row function
 
 ## Example
 

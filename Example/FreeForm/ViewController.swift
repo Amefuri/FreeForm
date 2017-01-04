@@ -22,6 +22,7 @@ class ViewController: FreeFormViewController {
     let segmented = FreeFormSegmentedRow(tag: "Segmented", title: "Segmented", value: "Hello", options: ["Hello", "Bye!"])
     let button = FreeFormButtonRow(tag: "Button", title: "Tap Me!!")
     let stepper = FreeFormStepperRow(tag: "Stepper", title: "Stepper", max: 10, min: 0, value: 0)
+    let switchRow = FreeFormSwitchRow(tag: "Switch", title: "Show or Hide", value: true as AnyObject?)
     
     override func initializeForm() {
         
@@ -44,6 +45,7 @@ class ViewController: FreeFormViewController {
         
         self.section3 = {
             let section = self.section3
+            section.addRow(self.switchRow)
             section.addRow(self.button)
             section.addRow(self.stepper)
             return section
@@ -97,6 +99,14 @@ class ViewController: FreeFormViewController {
         
         self.button.didTapped = { row in
             self.button.title = (self.button.title == "Tap Me!!" ? "Yes! One more time" : "Tap Me!!")
+            self.form.reloadForm(true)
+        }
+        
+        self.switchRow.didChanged = { value, row in
+            guard let isOn = value as? Bool else {
+                return
+            }
+            self.button.hidden = !isOn
             self.form.reloadForm(true)
         }
         
