@@ -24,6 +24,9 @@
 		63675C8F1E1BA7C5009DB4B0 /* FreeFormStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675C8D1E1BA7C5009DB4B0 /* FreeFormStepperCell.swift */; };
 		63675C911E1BA7C5009DB4B0 /* FreeFormStepperCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C8E1E1BA7C5009DB4B0 /* FreeFormStepperCell.xib */; };
 		63675C921E1BA7C5009DB4B0 /* FreeFormStepperCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C8E1E1BA7C5009DB4B0 /* FreeFormStepperCell.xib */; };
+		63675C951E1CC4D7009DB4B0 /* FreeFormTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675C931E1CC4D7009DB4B0 /* FreeFormTextCell.swift */; };
+		63675C961E1CC4D7009DB4B0 /* FreeFormTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */; };
+		63675C971E1CC4E3009DB4B0 /* FreeFormTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */; };
 		66124DBFCB4953355088765F73CC6CAF /* FreeFormSegmentedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99C08AD63DEFE2D2DAE975F686CF361 /* FreeFormSegmentedCell.xib */; };
 		68BDB64872C97B52724787EB9A9CD0FB /* FreeFormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56694C83E73389968470915D311500 /* FreeFormTextFieldCell.swift */; };
 		8E65BBAFBB4DA47AB0A03F50EF42125C /* FreeForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBFC26FF7714FBE8D98C5C3E3F4447 /* FreeForm-dummy.m */; };
@@ -81,6 +84,8 @@
 		63675C881E1B9BE9009DB4B0 /* FreeFormButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormButtonCell.xib; sourceTree = "<group>"; };
 		63675C8D1E1BA7C5009DB4B0 /* FreeFormStepperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormStepperCell.swift; sourceTree = "<group>"; };
 		63675C8E1E1BA7C5009DB4B0 /* FreeFormStepperCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormStepperCell.xib; sourceTree = "<group>"; };
+		63675C931E1CC4D7009DB4B0 /* FreeFormTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormTextCell.swift; sourceTree = "<group>"; };
+		63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormTextCell.xib; sourceTree = "<group>"; };
 		75A58ADD89F0841AE94270BEED1E4DB8 /* Pods-FreeForm_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FreeForm_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8421F4873F72F7F69BBFE9C74DB63FC5 /* FreeFormTextViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormTextViewCell.xib; sourceTree = "<group>"; };
 		87460B3660C157DFEA3165489C86A3D1 /* Pods-FreeForm_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FreeForm_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -183,6 +188,8 @@
 				8421F4873F72F7F69BBFE9C74DB63FC5 /* FreeFormTextViewCell.xib */,
 				63675C8D1E1BA7C5009DB4B0 /* FreeFormStepperCell.swift */,
 				63675C8E1E1BA7C5009DB4B0 /* FreeFormStepperCell.xib */,
+				63675C931E1CC4D7009DB4B0 /* FreeFormTextCell.swift */,
+				63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -448,6 +455,7 @@
 			files = (
 				66124DBFCB4953355088765F73CC6CAF /* FreeFormSegmentedCell.xib in Resources */,
 				63675C921E1BA7C5009DB4B0 /* FreeFormStepperCell.xib in Resources */,
+				63675C971E1CC4E3009DB4B0 /* FreeFormTextCell.xib in Resources */,
 				63675C8B1E1BA102009DB4B0 /* FreeFormButtonCell.xib in Resources */,
 				3211BFABE0CABDD23F714BF7A7EE0996 /* FreeFormTextFieldCell.xib in Resources */,
 				3825C39BBF1701A4A4633C2200E22D8F /* FreeFormTextViewCell.xib in Resources */,
@@ -458,6 +466,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63675C961E1CC4D7009DB4B0 /* FreeFormTextCell.xib in Resources */,
 				63675C911E1BA7C5009DB4B0 /* FreeFormStepperCell.xib in Resources */,
 				0C0D252AFCF3647DBB384A29B3F15DC3 /* FreeForm.bundle in Resources */,
 				63675C8A1E1B9BE9009DB4B0 /* FreeFormButtonCell.xib in Resources */,
@@ -486,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63675C951E1CC4D7009DB4B0 /* FreeFormTextCell.swift in Sources */,
 				8E65BBAFBB4DA47AB0A03F50EF42125C /* FreeForm-dummy.m in Sources */,
 				63675C8F1E1BA7C5009DB4B0 /* FreeFormStepperCell.swift in Sources */,
 				CAE4E1B5F53A0E1F886CFD53DDDCC80F /* FreeForm.swift in Sources */,

@@ -17,6 +17,7 @@ class ViewController: FreeFormViewController {
     
     let firstname = FreeFormTextFieldRow(tag: "FirstName", title: "FirstName", value: nil)
     let lastname = FreeFormTextFieldRow(tag: "LastName", title: "LastName", value: nil)
+    let text = FreeFormTextRow(tag: "Text", title: "Fullname", value: nil)
     let textView = FreeFormTextViewRow(tag: "TextView", title: "Detail", value: nil)
     let segmented = FreeFormSegmentedRow(tag: "Segmented", title: "Segmented", value: "Hello", options: ["Hello", "Bye!"])
     let button = FreeFormButtonRow(tag: "Button", title: "Tap Me!!")
@@ -30,6 +31,7 @@ class ViewController: FreeFormViewController {
             let section = self.section1
             section.addRow(self.firstname)
             section.addRow(self.lastname)
+            section.addRow(self.text)
             return section
         }()
         
@@ -100,7 +102,7 @@ class ViewController: FreeFormViewController {
         
         self.firstname.value = "Peerasak" as AnyObject?
         self.lastname.value = "Unsakon" as AnyObject?
-        
+        self.text.value = "\(self.firstname.value!) \(self.lastname.value!)" as AnyObject?
     }
 }
 
