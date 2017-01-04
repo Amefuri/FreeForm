@@ -13,7 +13,7 @@
 - [X] Stepper Row
 - [X] Text Row
 - [X] Switch Row
-- [ ] Datetime Row
+- [X] Datetime Row
 - [ ] Push Options Row
 - [ ] Custom Row
 - [ ] Hidden/Show Row function
