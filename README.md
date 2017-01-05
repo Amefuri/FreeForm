@@ -31,7 +31,7 @@ pod 'FreeForm', :git => 'https://github.com/clonezer/FreeForm.git'
 - [X] Text Row
 - [X] Switch Row
 - [X] Datetime Row
-- [ ] Push Options Row
+- [X] Push Options Row
 - [ ] Custom Row
 - [ ] Hidden/Show Row function
 - [ ] Photo Row
