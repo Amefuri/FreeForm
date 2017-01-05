@@ -5,19 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/FreeForm.svg?style=flat)](http://cocoapods.org/pods/FreeForm)
 [![Platform](https://img.shields.io/cocoapods/p/FreeForm.svg?style=flat)](http://cocoapods.org/pods/FreeForm)
 
-## Todo List
-- [X] TextField Row
-- [X] TextView Row 
-- [X] Segmented Row
-- [X] Button Row
-- [X] Stepper Row
-- [X] Text Row
-- [X] Switch Row
-- [X] Datetime Row
-- [ ] Push Options Row
-- [ ] Custom Row
-- [ ] Hidden/Show Row function
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -34,6 +21,20 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'FreeForm', :git => 'https://github.com/clonezer/FreeForm.git'
 ```
+
+## Todo List
+- [X] TextField Row
+- [X] TextView Row 
+- [X] Segmented Row
+- [X] Button Row
+- [X] Stepper Row
+- [X] Text Row
+- [X] Switch Row
+- [X] Datetime Row
+- [ ] Push Options Row
+- [ ] Custom Row
+- [ ] Hidden/Show Row function
+- [ ] Photo Row
 
 ## Author
 

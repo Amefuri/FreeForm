@@ -40,7 +40,6 @@ public class FreeFormDatetimeCell: FreeFormCell {
     
     override public func awakeFromNib() {
         super.awakeFromNib()
-        self.datePicker.datePickerMode = .date
     }
     
     override public func update() {
