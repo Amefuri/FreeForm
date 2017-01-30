@@ -29,6 +29,7 @@ public class FreeFormSwitchCell: FreeFormCell {
     @IBOutlet public weak var cellSwitch: UISwitch!
     
     override public func update() {
+        super.update()
         guard let row = self.row as? FreeFormSwitchRow else { return }
         self.titleLabel.text = row.title
         

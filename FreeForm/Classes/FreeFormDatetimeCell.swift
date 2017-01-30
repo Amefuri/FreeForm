@@ -43,6 +43,7 @@ public class FreeFormDatetimeCell: FreeFormCell {
     }
     
     override public func update() {
+        super.update()
         guard let row = self.row as? FreeFormDatetimeRow else { return }
         
         row.didTapped = { row in

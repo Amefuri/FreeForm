@@ -21,6 +21,7 @@ public class FreeFormTextCell: FreeFormCell {
     @IBOutlet public weak var valueLabel: UILabel!
     
     override public func update() {
+        super.update()
         guard let row = self.row as? FreeFormTextRow else {
             self.titleLabel.text = ""
             return
