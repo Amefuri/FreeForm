@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Validator
 
 public class FreeFormTextViewRow: FreeFormRow {
     override public init(tag: String, title: String, value: AnyObject?) {

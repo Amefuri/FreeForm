@@ -7,14 +7,30 @@
 //
 
 import UIKit
+import Validator
 
 public class FreeFormTextFieldRow: FreeFormRow {
+    
+    public var validationRuleSet: ValidationRuleSet<String>? = ValidationRuleSet<String>()
+    public var validationErrors: [String]?
     
     override public init(tag: String, title: String, value: AnyObject?) {
         super.init(tag: tag, title: title, value: value)
         self.cellType = String(describing: FreeFormTextFieldCell.self)
     }
     
+    public func updateValidationState(result: ValidationResult) -> Bool {
+        switch result {
+        case .invalid(let failures):
+            self.validated = false
+            self.validationErrors = failures.map { $0.localizedDescription }
+            return false
+        case .valid:
+            self.validated = true
+            self.validationErrors?.removeAll()
+            return true
+        }
+    }
 }
 
 public class FreeFormTextFieldCell: FreeFormCell {
@@ -30,14 +46,38 @@ public class FreeFormTextFieldCell: FreeFormCell {
     
     override public func update() {
         super.update()
-        titleLabel.text = row.title
-        guard let value = row.value as? String else {
+        guard let textfieldRow = self.row as? FreeFormTextFieldRow else { return }
+        
+        titleLabel.text = textfieldRow.title
+        guard let value = textfieldRow.value as? String else {
             textField.text = ""
             return
         }
+        
+        self.textField.validationRules = textfieldRow.validationRuleSet
+        self.textField.validateOnInputChange(enabled: true)
+        self.textField.validationHandler = { result in
+            if textfieldRow.updateValidationState(result: result) {
+                self.clearError()
+            }else {
+                if let message = textfieldRow.validationErrors?.joined(separator: "/") {
+                    self.showError(message: message)
+                }
+            }
+        }
+        
         textField.text = value
     }
     
+    public func showError(message: String) {
+        self.errorLabel.text = message
+    }
+    
+    public func clearError() {
+        self.errorLabel.text = ""
+        guard let textfieldRow = self.row as? FreeFormTextFieldRow else { return }
+        textfieldRow.validationErrors?.removeAll()
+    }
 }
 
 extension FreeFormTextFieldCell: UITextFieldDelegate {

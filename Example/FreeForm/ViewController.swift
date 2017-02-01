@@ -8,6 +8,7 @@
 
 import UIKit
 import FreeForm
+import Validator
 
 class ViewController: FreeFormViewController {
     

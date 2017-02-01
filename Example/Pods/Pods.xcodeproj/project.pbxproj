@@ -7,142 +7,223 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		038A1655FC49FD66FAE057601C005BE7 /* FreeFormTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64645911117F609C2EA14CAC42B90 /* FreeFormTextViewCell.swift */; };
-		0C0D252AFCF3647DBB384A29B3F15DC3 /* FreeForm.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 40594B3227C69215118AFCAF91827A68 /* FreeForm.bundle */; };
+		04E55B971C9B9E6045876D14D3420619 /* ValidationRuleCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7203AE21BEF85C8247D3C81ED445C7 /* ValidationRuleCondition.swift */; };
+		098DCB18DA2792CB467FB8A88EC69F20 /* FreeForm.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3B811867D22B42BADC4914B52C9F7AA /* FreeForm.bundle */; };
+		09DD5B84AFB98453F711B7B82F9F78DC /* ValidationRuleComparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53F6377FA766416BA67601B3F24459 /* ValidationRuleComparison.swift */; };
+		0A8B1AEBD5B049AACE7838AD761CCA3C /* FreeFormStepperCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2CF69CD75B0FA42D89155FE7A757A0 /* FreeFormStepperCell.xib */; };
+		0D87FCE0CC969E5A96B9ED085E6191AA /* FreeForm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FA73ACED5F9D65C98EA66B2F86F512 /* FreeForm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F3A6F35C2FD317BCF40B89426745F17 /* FreeFormButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21CC2963062193BC94A152146C2D63CA /* FreeFormButtonCell.xib */; };
 		109CA5BF8E0760EBC418F714470C5C0C /* Pods-FreeForm_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1088651EF5C4496F3ABE4B410D716B /* Pods-FreeForm_Tests-dummy.m */; };
-		1AB6704D81979B44CFFE91444847716A /* FreeFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31475F9DBD1FCC7E5CB2B7CA129E9954 /* FreeFormCell.swift */; };
-		20B8ED2446A8BBE4F607AD90124D0A88 /* FreeFormSegmentedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5CF83F901EF4C4543AB32A3083FA5 /* FreeFormSegmentedCell.swift */; };
-		3211BFABE0CABDD23F714BF7A7EE0996 /* FreeFormTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C5AA453E6DA42E7EFEF789041B4416 /* FreeFormTextFieldCell.xib */; };
-		335D26F18D7D38C1A010AEF02B344590 /* Pods-FreeForm_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0E17D8E478389E69D16D66B2B5A6E0E /* Pods-FreeForm_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11E7E58EF6E9B61A09CC1FC8C2A42487 /* FreeFormSegmentedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA2B0587B22D0F171D6EFE7AC82EB9 /* FreeFormSegmentedCell.swift */; };
+		132944A4CCC43AF1CF84EA1793504AD0 /* ValidationRuleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18CF3A9B5A6D9A4A7C211D57928557 /* ValidationRuleSet.swift */; };
+		14EEDA4E00829CB871058AE132A927B2 /* FreeFormDatetimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABDA336B2C66F7949C0F7395F8FBC05 /* FreeFormDatetimeCell.swift */; };
+		1A4273DB1E7DC5DFD7A1E6330AE14AFB /* Validator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B01C56BF3EC0C547047CFB45825C908 /* Validator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A9654FAC6FD260E0D59474CDA8A52C8 /* ValidationRuleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F35070D579100A284C86E70B0E898B /* ValidationRuleURL.swift */; };
+		1B3D0011A0964CBD1AA4B7618C7CF333 /* ValidationRuleRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22743994D6E0C750DD4CA772C873B909 /* ValidationRuleRequired.swift */; };
+		1BBF91F56E29A30A951FCE7AE1F5DE86 /* FreeFormTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23B87E7C5DAA64F29AD7438287491A2 /* FreeFormTextCell.swift */; };
+		1F42432E979AC4A0956E61E224C3F3B8 /* ValidatableInterfaceElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D727C190C6B0B542BBD865B2CE97639 /* ValidatableInterfaceElement.swift */; };
+		1F4422A49E4BABD8899305A1606F8E44 /* FreeFormPushCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 34E17C31CAE4C3A745D21C6795CA4F69 /* FreeFormPushCell.xib */; };
+		272F2A3E64EE32878805C04E825DC0AD /* UITextView+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE409E138FE106C7FAC78E0D64CA4AF1 /* UITextView+Validator.swift */; };
+		2DAEB219E15AF076ECCDBA67040C8E62 /* ValidationRuleContains.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88AD6159B0CD84EBD6582E9BF1F17B9 /* ValidationRuleContains.swift */; };
+		2E7EAA96CC2EB21E19782FA33086A89B /* ValidationRulePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0265F9F4FB6FA660FA9BBF9ECC550B5 /* ValidationRulePattern.swift */; };
+		2EA387D49536902AFF59DC9C2AD2E489 /* FreeFormTextCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = BBA72DEE44B7F369C969450730B3A4D9 /* FreeFormTextCell.xib */; };
+		33E510AA05B9C44668FDE0AC04E793DF /* ValidationRuleEquality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B483C8DB8E9670158A2419E8D60AD /* ValidationRuleEquality.swift */; };
 		3684DDB2C9DB0C38A89F0B4906245B69 /* Pods-FreeForm_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFED21FC2220BE05142AA0243943F42E /* Pods-FreeForm_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3825C39BBF1701A4A4633C2200E22D8F /* FreeFormTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8421F4873F72F7F69BBFE9C74DB63FC5 /* FreeFormTextViewCell.xib */; };
-		45526B8B45E78B439F6B5FE8BE83133C /* FreeFormTextViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8421F4873F72F7F69BBFE9C74DB63FC5 /* FreeFormTextViewCell.xib */; };
-		539A275851AF1D1A91C083F7108E6C6F /* FreeForm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FA73ACED5F9D65C98EA66B2F86F512 /* FreeForm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63675C891E1B9BE9009DB4B0 /* FreeFormButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675C871E1B9BE9009DB4B0 /* FreeFormButtonCell.swift */; };
-		63675C8A1E1B9BE9009DB4B0 /* FreeFormButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C881E1B9BE9009DB4B0 /* FreeFormButtonCell.xib */; };
-		63675C8B1E1BA102009DB4B0 /* FreeFormButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C881E1B9BE9009DB4B0 /* FreeFormButtonCell.xib */; };
-		63675C8F1E1BA7C5009DB4B0 /* FreeFormStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675C8D1E1BA7C5009DB4B0 /* FreeFormStepperCell.swift */; };
-		63675C911E1BA7C5009DB4B0 /* FreeFormStepperCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C8E1E1BA7C5009DB4B0 /* FreeFormStepperCell.xib */; };
-		63675C921E1BA7C5009DB4B0 /* FreeFormStepperCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C8E1E1BA7C5009DB4B0 /* FreeFormStepperCell.xib */; };
-		63675C951E1CC4D7009DB4B0 /* FreeFormTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675C931E1CC4D7009DB4B0 /* FreeFormTextCell.swift */; };
-		63675C961E1CC4D7009DB4B0 /* FreeFormTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */; };
-		63675C971E1CC4E3009DB4B0 /* FreeFormTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */; };
-		63675C9A1E1CE0F8009DB4B0 /* FreeFormSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675C981E1CE0F8009DB4B0 /* FreeFormSwitchCell.swift */; };
-		63675C9B1E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C991E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib */; };
-		63675C9C1E1CE102009DB4B0 /* FreeFormSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C991E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib */; };
-		63675C9F1E1CE92B009DB4B0 /* FreeFormDatetimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675C9D1E1CE92B009DB4B0 /* FreeFormDatetimeCell.swift */; };
-		63675CA01E1CE92B009DB4B0 /* FreeFormDatetimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C9E1E1CE92B009DB4B0 /* FreeFormDatetimeCell.xib */; };
-		63675CA11E1CEA98009DB4B0 /* FreeFormDatetimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675C9E1E1CE92B009DB4B0 /* FreeFormDatetimeCell.xib */; };
-		63675CD01E1D72CE009DB4B0 /* FreeFormPushCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675CCE1E1D72CE009DB4B0 /* FreeFormPushCell.swift */; };
-		63675CD11E1D72CE009DB4B0 /* FreeFormPushCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675CCF1E1D72CE009DB4B0 /* FreeFormPushCell.xib */; };
-		63675CD21E1D72D7009DB4B0 /* FreeFormPushCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675CCF1E1D72CE009DB4B0 /* FreeFormPushCell.xib */; };
-		63675CD51E1DF31A009DB4B0 /* FreeFormOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675CD31E1DF31A009DB4B0 /* FreeFormOptionsViewController.swift */; };
-		63675CD61E1DF31A009DB4B0 /* FreeFormOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675CD41E1DF31A009DB4B0 /* FreeFormOptionsViewController.xib */; };
-		63675CD71E1DF325009DB4B0 /* FreeFormOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675CD41E1DF31A009DB4B0 /* FreeFormOptionsViewController.xib */; };
-		63675CDA1E1DF42C009DB4B0 /* FreeFormOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63675CD81E1DF42C009DB4B0 /* FreeFormOptionCell.swift */; };
-		63675CDB1E1DF42C009DB4B0 /* FreeFormOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675CD91E1DF42C009DB4B0 /* FreeFormOptionCell.xib */; };
-		63675CDC1E1DFC9A009DB4B0 /* FreeFormOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63675CD91E1DF42C009DB4B0 /* FreeFormOptionCell.xib */; };
-		66124DBFCB4953355088765F73CC6CAF /* FreeFormSegmentedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99C08AD63DEFE2D2DAE975F686CF361 /* FreeFormSegmentedCell.xib */; };
-		68BDB64872C97B52724787EB9A9CD0FB /* FreeFormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56694C83E73389968470915D311500 /* FreeFormTextFieldCell.swift */; };
-		8E65BBAFBB4DA47AB0A03F50EF42125C /* FreeForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBFC26FF7714FBE8D98C5C3E3F4447 /* FreeForm-dummy.m */; };
-		C02A4EAB4D96352C06B0C99551F0BA98 /* FreeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C77FE81F0036071F3BB060F16536C35 /* FreeFormViewController.swift */; };
-		C5ACE3168C529D8029C2DD4617EEE9FE /* FreeFormTextFieldCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 29C5AA453E6DA42E7EFEF789041B4416 /* FreeFormTextFieldCell.xib */; };
-		C6FBFC8AF8583B609F1CF3DDB377012C /* Pods-FreeForm_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB64023957FB240A99858F51BEB2F /* Pods-FreeForm_Example-dummy.m */; };
-		CAE4E1B5F53A0E1F886CFD53DDDCC80F /* FreeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D72BB6EE65BB669ACE9B44B3651A0D8 /* FreeForm.swift */; };
-		CBFC7BC44D16C9F55DF1A99635DD8471 /* FreeFormSegmentedCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = A99C08AD63DEFE2D2DAE975F686CF361 /* FreeFormSegmentedCell.xib */; };
-		CD609C4065BB8D2AB125C22403351B27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		D7CE41CB7E8C4D5ABFAFD4E16202B312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		F41357C89A80784A9D2B350A4DEC3FBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		38572FAB8F0D1D27B4D7FFC49BA2770F /* ValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C382B0F2B67A3D974358C1FCB1305 /* ValidationPattern.swift */; };
+		387352F1137704007342134D737A7EFE /* FreeFormOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650D8CA851583018AA43437DCBA73282 /* FreeFormOptionCell.xib */; };
+		4232C48128415FFB08127FB7557C4499 /* FreeFormOptionCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 650D8CA851583018AA43437DCBA73282 /* FreeFormOptionCell.xib */; };
+		4743D2091CB9EAB1EF51DC1E00B1E477 /* FreeFormOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000BF3729D28B24531535E7E67F01E1E /* FreeFormOptionsViewController.swift */; };
+		4864677E086D0C9436FD7BD06A17EF4C /* FreeFormPushCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21887B2F74CF882EFCBFF3EE1B93721 /* FreeFormPushCell.swift */; };
+		4ED1BC6444CA3FB296512EF1B798758B /* ValidationRuleLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AE4905284E23248C161D4D78DD4E0 /* ValidationRuleLength.swift */; };
+		525A014EF0F838010331B76B267E1B66 /* FreeFormOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CED5959B7B608DE473C4198329E4D43 /* FreeFormOptionCell.swift */; };
+		53C0407B34EC786276AB7706B4AAA8D0 /* FreeFormSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57187290B7FCEF44637115788DD5334A /* FreeFormSwitchCell.xib */; };
+		57E7F7C081502E5933A3B46C6BBF234F /* Validator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F441993905CB45D56D8F67D67160260 /* Validator-dummy.m */; };
+		605F853F7C04FDC28A5203A00FB3A208 /* FreeFormTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720A13D8D5EDDBB855350FE6E7295C02 /* FreeFormTextViewCell.xib */; };
+		609C2EABA651AC34D11AB13883E0527C /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF5DA631AFD8522AF27DCED89D1ED8 /* ValidationRule.swift */; };
+		6191445D6A8C3EEA12CD4C2B37E59C3F /* ContainsNumberValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAD8A83E22000114993678E4E8120F /* ContainsNumberValidationPattern.swift */; };
+		625070AB03A3DCCF7912F5F7F097BAD1 /* FreeFormButtonCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 21CC2963062193BC94A152146C2D63CA /* FreeFormButtonCell.xib */; };
+		626479E9FE4E3A98E3BDD562B6826799 /* FreeFormDatetimeCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = EAC8A89E3E5ADE54B93148A9851D02C5 /* FreeFormDatetimeCell.xib */; };
+		637A4E8472A0A64CC91C2E0C710B26F7 /* Validator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0BDD1C8C87FBE538528A9936D5E717 /* Validator.framework */; };
+		64D1C86687E039E042874D7CB817C434 /* FreeFormTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA72DEE44B7F369C969450730B3A4D9 /* FreeFormTextCell.xib */; };
+		65D0B0AF318E2C7629714E39E23929DA /* Pods-FreeForm_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0E17D8E478389E69D16D66B2B5A6E0E /* Pods-FreeForm_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69CECA37A11FE751F8897EF0AF76662E /* EmailValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518EC54B43A0AE31A8591155EFFD212C /* EmailValidationPattern.swift */; };
+		6BEDEF4EBD1EA0763E0E1F7F47F4C4E8 /* FreeFormSegmentedCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 23377C172DC31705A6A9EC03E7C17419 /* FreeFormSegmentedCell.xib */; };
+		70BD73D000BA1798D61E089072602628 /* UISlider+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8D72A82A88B43C9B3C2CBDFF1A5F6 /* UISlider+Validator.swift */; };
+		76CE84F28D477A74479C33867D60398B /* FreeFormSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51855050ECAC86B123D1FEA46C8E0BF2 /* FreeFormSwitchCell.swift */; };
+		76D0BADB6AFA2652A63326014226D20F /* FreeFormTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7424C81071E2B6137F75A90F2904FF1 /* FreeFormTextFieldCell.xib */; };
+		7D8965B21FB93DDC69618A87F7F56672 /* ValidationRulePaymentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69799A04658DB888258301680FAD30 /* ValidationRulePaymentCard.swift */; };
+		818D03DCCC54C5EED6E48A7E4AD87FBA /* FreeFormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C7CD7787225BB64763E9D056C319D /* FreeFormTextFieldCell.swift */; };
+		86736C1C039829F83EE27619DB90D5BB /* FreeFormPushCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E17C31CAE4C3A745D21C6795CA4F69 /* FreeFormPushCell.xib */; };
+		8963DE7E030E6B35F6B7DB87F0F1CE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CFA7BB5A578787051DD76DBF9E45DF /* Foundation.framework */; };
+		8C058113920D7E63BDB92E64A2026382 /* FreeFormStepperCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CF69CD75B0FA42D89155FE7A757A0 /* FreeFormStepperCell.xib */; };
+		91176EF8ABD107019EDE1D3FE8E4738A /* FreeFormOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E2D269B153FB4CADA72133EEC0A56F /* FreeFormOptionsViewController.xib */; };
+		95DFA6655C8BDC96ECC9767EF49367D5 /* FreeFormTextFieldCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = E7424C81071E2B6137F75A90F2904FF1 /* FreeFormTextFieldCell.xib */; };
+		9DA8F3D136A597B28EB936F2EE6D9530 /* FreeFormDatetimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC8A89E3E5ADE54B93148A9851D02C5 /* FreeFormDatetimeCell.xib */; };
+		A09F57F2C8BCAB7F22574AE8A65B2D57 /* FreeFormSwitchCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 57187290B7FCEF44637115788DD5334A /* FreeFormSwitchCell.xib */; };
+		A729A51BB1101267618F7A5819DA470A /* FreeForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBFC26FF7714FBE8D98C5C3E3F4447 /* FreeForm-dummy.m */; };
+		AA1014EB016B2E9A2445CDCA18B3C548 /* FreeFormTextViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 720A13D8D5EDDBB855350FE6E7295C02 /* FreeFormTextViewCell.xib */; };
+		ACE08BFC4518CBE546D1F888932E823A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CFA7BB5A578787051DD76DBF9E45DF /* Foundation.framework */; };
+		AE3320ABC5BECDE2683C63FC786BAFE2 /* UITextField+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D36B7FCACACB599D5C03DFAA87CE5 /* UITextField+Validator.swift */; };
+		AE55DC181507417930AE8E88B45D7468 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407878EED1227C6FAFFCAEA23AA212B3 /* UIKit.framework */; };
+		AFE7F0CEA7E28A415C95085906F61B73 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C169952BCA26605E585538381C2CED47 /* Validator.swift */; };
+		C24112D3F5FDABF8BADDC27C43A10BE8 /* FreeFormOptionsViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = A1E2D269B153FB4CADA72133EEC0A56F /* FreeFormOptionsViewController.xib */; };
+		C2BEE305EAC26DEFC1B11F40ED21788F /* FreeFormTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD4B7DE882BE9FF01BE4850CD89D28 /* FreeFormTextViewCell.swift */; };
+		CD2832D33873B0BB9EB67C973B8B4FEF /* CaseValidationPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575AC0C8FC4E6678601ACD5AB95AFC1D /* CaseValidationPattern.swift */; };
+		CD609C4065BB8D2AB125C22403351B27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CFA7BB5A578787051DD76DBF9E45DF /* Foundation.framework */; };
+		D287CCB9777EB34E8A003EA9C6BFBE63 /* FreeFormButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A87322423DFD42A8EDBFB0F8C24FE8E /* FreeFormButtonCell.swift */; };
+		D6443915FAE49F0AB0FDC204C183F652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CFA7BB5A578787051DD76DBF9E45DF /* Foundation.framework */; };
+		DAF4E3194253B2AB9A457D4FE34B491F /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107FC412C5849B676DB7D9EC13085534 /* Validatable.swift */; };
+		DE12EF4BAF26906CAFBE43B3CA2B9701 /* FreeFormSegmentedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23377C172DC31705A6A9EC03E7C17419 /* FreeFormSegmentedCell.xib */; };
+		E4B8259692AE1007D2ABAAC9CE259862 /* Pods-FreeForm_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB64023957FB240A99858F51BEB2F /* Pods-FreeForm_Example-dummy.m */; };
+		E60DB6A2183679B01EB236F00322DF14 /* FreeFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08BC5BE5CDF91FFD59FDC86BE988E4A /* FreeFormCell.swift */; };
+		EF8D11F0BC7E2084ED702E3A6632CDE2 /* FreeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877F57174B9142E0DB17F859650FDDD /* FreeForm.swift */; };
+		F13EE8A6EA6A9D6EE06EBE6688FBBBB0 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50918736B60603A3D3461127A9B5EC /* ValidationResult.swift */; };
+		F4320A19AB33CB89C2E3AC40C5652F83 /* FreeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57525349E2C139B1576B072151565A86 /* FreeFormViewController.swift */; };
+		FA0EABBAC55146E1C1A0D4F2262F117E /* FreeFormStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14006A91E11E1D2ADA6B046F10CF33D8 /* FreeFormStepperCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		32FBFC446D58B45D10835C364BEFD29A /* PBXContainerItemProxy */ = {
+		054FCACFAE3A9B4373C9905BBBADB272 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9C5728BD701816A23E99565AD47BDF08;
+			remoteGlobalIDString = 81EB3ED47F7E6693F560CE2DF858BB60;
+			remoteInfo = Validator;
+		};
+		4832F84CDC082C00BF00764B1F6ED25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72A8888E68B93206ACCD16AE7A4F5492;
+			remoteInfo = FreeForm;
+		};
+		5754B47BE99C3669E5DEF4AE618599B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69C14264475F8E07F6F081E62B212ED2;
 			remoteInfo = "FreeForm-FreeForm";
 		};
-		8B0570B65CA2B716D24E9E8301896C99 /* PBXContainerItemProxy */ = {
+		E2F81C7D23BFAC3FCD64C6A418EDDAB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B16783F71AD4B4A7AC7AD98864EBD1B1;
-			remoteInfo = FreeForm;
+			remoteGlobalIDString = 81EB3ED47F7E6693F560CE2DF858BB60;
+			remoteInfo = Validator;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000BF3729D28B24531535E7E67F01E1E /* FreeFormOptionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormOptionsViewController.swift; sourceTree = "<group>"; };
+		042C7CD7787225BB64763E9D056C319D /* FreeFormTextFieldCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormTextFieldCell.swift; sourceTree = "<group>"; };
 		07A260659C0D6787A333D6128604F93E /* Pods-FreeForm_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeForm_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0A8AE4905284E23248C161D4D78DD4E0 /* ValidationRuleLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleLength.swift; path = Validator/Validator/Rules/ValidationRuleLength.swift; sourceTree = "<group>"; };
 		0BDBFC26FF7714FBE8D98C5C3E3F4447 /* FreeForm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FreeForm-dummy.m"; sourceTree = "<group>"; };
+		0D18CF3A9B5A6D9A4A7C211D57928557 /* ValidationRuleSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleSet.swift; path = Validator/Validator/ValidationRuleSet.swift; sourceTree = "<group>"; };
+		0D7203AE21BEF85C8247D3C81ED445C7 /* ValidationRuleCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleCondition.swift; path = Validator/Validator/Rules/ValidationRuleCondition.swift; sourceTree = "<group>"; };
 		0F6E4BE7E90FACE5405C0B146FD051C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1514C5A10408A16E0CD1CB3905A87AE0 /* FreeForm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FreeForm.modulemap; sourceTree = "<group>"; };
-		1C77FE81F0036071F3BB060F16536C35 /* FreeFormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormViewController.swift; sourceTree = "<group>"; };
+		0FEAD8A83E22000114993678E4E8120F /* ContainsNumberValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainsNumberValidationPattern.swift; path = Validator/Validator/ContainsNumberValidationPattern.swift; sourceTree = "<group>"; };
+		107FC412C5849B676DB7D9EC13085534 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Validator/Validator/Validatable.swift; sourceTree = "<group>"; };
+		14006A91E11E1D2ADA6B046F10CF33D8 /* FreeFormStepperCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormStepperCell.swift; sourceTree = "<group>"; };
+		14F35070D579100A284C86E70B0E898B /* ValidationRuleURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleURL.swift; path = Validator/Validator/Rules/ValidationRuleURL.swift; sourceTree = "<group>"; };
+		1514C5A10408A16E0CD1CB3905A87AE0 /* FreeForm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FreeForm.modulemap; sourceTree = "<group>"; };
+		1B01C56BF3EC0C547047CFB45825C908 /* Validator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Validator-umbrella.h"; sourceTree = "<group>"; };
+		1C53F6377FA766416BA67601B3F24459 /* ValidationRuleComparison.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleComparison.swift; path = Validator/Validator/Rules/ValidationRuleComparison.swift; sourceTree = "<group>"; };
+		21CC2963062193BC94A152146C2D63CA /* FreeFormButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormButtonCell.xib; sourceTree = "<group>"; };
+		22743994D6E0C750DD4CA772C873B909 /* ValidationRuleRequired.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleRequired.swift; path = Validator/Validator/Rules/ValidationRuleRequired.swift; sourceTree = "<group>"; };
+		23377C172DC31705A6A9EC03E7C17419 /* FreeFormSegmentedCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormSegmentedCell.xib; sourceTree = "<group>"; };
 		23ACBC9F3FEFDFF7A40CE5322A69EF55 /* ResourceBundle-FreeForm-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FreeForm-Info.plist"; sourceTree = "<group>"; };
+		2877F57174B9142E0DB17F859650FDDD /* FreeForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeForm.swift; sourceTree = "<group>"; };
 		2950DB6D8A7450900895029EE7C12C5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29C5AA453E6DA42E7EFEF789041B4416 /* FreeFormTextFieldCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormTextFieldCell.xib; sourceTree = "<group>"; };
+		29D0C9A9E01D15FDA202973F5A996058 /* Validator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Validator.xcconfig; sourceTree = "<group>"; };
 		29E48ACF52E9770E348CC47AA29FF851 /* Pods-FreeForm_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreeForm_Example-resources.sh"; sourceTree = "<group>"; };
 		30855BAC371F79FF0A2A895F5CC3490C /* FreeForm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FreeForm-prefix.pch"; sourceTree = "<group>"; };
-		31475F9DBD1FCC7E5CB2B7CA129E9954 /* FreeFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormCell.swift; sourceTree = "<group>"; };
-		3D6FECF60E5CD694921FC90614EB6A68 /* Pods-FreeForm_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FreeForm_Tests.modulemap"; sourceTree = "<group>"; };
-		40594B3227C69215118AFCAF91827A68 /* FreeForm.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeForm.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C56E76496B86B9FCB0AF13B235A08A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34E17C31CAE4C3A745D21C6795CA4F69 /* FreeFormPushCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormPushCell.xib; sourceTree = "<group>"; };
+		3C69799A04658DB888258301680FAD30 /* ValidationRulePaymentCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRulePaymentCard.swift; path = Validator/Validator/Rules/ValidationRulePaymentCard.swift; sourceTree = "<group>"; };
+		3D6FECF60E5CD694921FC90614EB6A68 /* Pods-FreeForm_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FreeForm_Tests.modulemap"; sourceTree = "<group>"; };
+		407878EED1227C6FAFFCAEA23AA212B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		430A6BC10A6E7497ECF7C51A7E726B13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4604C6F37B5ADB874BE996AC61F490C0 /* FreeForm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FreeForm.xcconfig; sourceTree = "<group>"; };
 		4DE392B51386D451A599DCAA5DC67144 /* Pods-FreeForm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeForm_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4E5FB64023957FB240A99858F51BEB2F /* Pods-FreeForm_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FreeForm_Example-dummy.m"; sourceTree = "<group>"; };
-		50D5CF83F901EF4C4543AB32A3083FA5 /* FreeFormSegmentedCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormSegmentedCell.swift; sourceTree = "<group>"; };
+		4FFF5DA631AFD8522AF27DCED89D1ED8 /* ValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRule.swift; path = Validator/Validator/ValidationRule.swift; sourceTree = "<group>"; };
+		51855050ECAC86B123D1FEA46C8E0BF2 /* FreeFormSwitchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormSwitchCell.swift; sourceTree = "<group>"; };
+		518EC54B43A0AE31A8591155EFFD212C /* EmailValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmailValidationPattern.swift; path = Validator/Validator/EmailValidationPattern.swift; sourceTree = "<group>"; };
+		57187290B7FCEF44637115788DD5334A /* FreeFormSwitchCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormSwitchCell.xib; sourceTree = "<group>"; };
+		57525349E2C139B1576B072151565A86 /* FreeFormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormViewController.swift; sourceTree = "<group>"; };
+		575AC0C8FC4E6678601ACD5AB95AFC1D /* CaseValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaseValidationPattern.swift; path = Validator/Validator/CaseValidationPattern.swift; sourceTree = "<group>"; };
+		5ABDA336B2C66F7949C0F7395F8FBC05 /* FreeFormDatetimeCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormDatetimeCell.swift; sourceTree = "<group>"; };
 		5AEECEB0AF77F44E89F809EE2874D00C /* Pods-FreeForm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeForm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D2E50DC9A22F9BD2AACAB93D8869609 /* Pods-FreeForm_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreeForm_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		5E1088651EF5C4496F3ABE4B410D716B /* Pods-FreeForm_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FreeForm_Tests-dummy.m"; sourceTree = "<group>"; };
-		5F8DB0D8BD16AA5EA46861F872A86DF9 /* Pods_FreeForm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeForm_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		63675C871E1B9BE9009DB4B0 /* FreeFormButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormButtonCell.swift; sourceTree = "<group>"; };
-		63675C881E1B9BE9009DB4B0 /* FreeFormButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormButtonCell.xib; sourceTree = "<group>"; };
-		63675C8D1E1BA7C5009DB4B0 /* FreeFormStepperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormStepperCell.swift; sourceTree = "<group>"; };
-		63675C8E1E1BA7C5009DB4B0 /* FreeFormStepperCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormStepperCell.xib; sourceTree = "<group>"; };
-		63675C931E1CC4D7009DB4B0 /* FreeFormTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormTextCell.swift; sourceTree = "<group>"; };
-		63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormTextCell.xib; sourceTree = "<group>"; };
-		63675C981E1CE0F8009DB4B0 /* FreeFormSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormSwitchCell.swift; sourceTree = "<group>"; };
-		63675C991E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormSwitchCell.xib; sourceTree = "<group>"; };
-		63675C9D1E1CE92B009DB4B0 /* FreeFormDatetimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormDatetimeCell.swift; sourceTree = "<group>"; };
-		63675C9E1E1CE92B009DB4B0 /* FreeFormDatetimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormDatetimeCell.xib; sourceTree = "<group>"; };
-		63675CCE1E1D72CE009DB4B0 /* FreeFormPushCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormPushCell.swift; sourceTree = "<group>"; };
-		63675CCF1E1D72CE009DB4B0 /* FreeFormPushCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormPushCell.xib; sourceTree = "<group>"; };
-		63675CD31E1DF31A009DB4B0 /* FreeFormOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormOptionsViewController.swift; sourceTree = "<group>"; };
-		63675CD41E1DF31A009DB4B0 /* FreeFormOptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormOptionsViewController.xib; sourceTree = "<group>"; };
-		63675CD81E1DF42C009DB4B0 /* FreeFormOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeFormOptionCell.swift; sourceTree = "<group>"; };
-		63675CD91E1DF42C009DB4B0 /* FreeFormOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreeFormOptionCell.xib; sourceTree = "<group>"; };
+		620B483C8DB8E9670158A2419E8D60AD /* ValidationRuleEquality.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleEquality.swift; path = Validator/Validator/Rules/ValidationRuleEquality.swift; sourceTree = "<group>"; };
+		650D8CA851583018AA43437DCBA73282 /* FreeFormOptionCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormOptionCell.xib; sourceTree = "<group>"; };
+		679B59C36ADFD234412A6CEB6A1E8A05 /* Validator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Validator.modulemap; sourceTree = "<group>"; };
+		6CED5959B7B608DE473C4198329E4D43 /* FreeFormOptionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormOptionCell.swift; sourceTree = "<group>"; };
+		6D727C190C6B0B542BBD865B2CE97639 /* ValidatableInterfaceElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidatableInterfaceElement.swift; path = "Validator/Validator/UIKit+Validator/ValidatableInterfaceElement.swift"; sourceTree = "<group>"; };
+		720A13D8D5EDDBB855350FE6E7295C02 /* FreeFormTextViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormTextViewCell.xib; sourceTree = "<group>"; };
 		75A58ADD89F0841AE94270BEED1E4DB8 /* Pods-FreeForm_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FreeForm_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8421F4873F72F7F69BBFE9C74DB63FC5 /* FreeFormTextViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormTextViewCell.xib; sourceTree = "<group>"; };
+		7A87322423DFD42A8EDBFB0F8C24FE8E /* FreeFormButtonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormButtonCell.swift; sourceTree = "<group>"; };
 		87460B3660C157DFEA3165489C86A3D1 /* Pods-FreeForm_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FreeForm_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8D3D7F8263F64E505B29DEF841A9BA24 /* Pods-FreeForm_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreeForm_Tests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A1643E99D7ACDCCBCE5DDDEF425CF35 /* Pods_FreeForm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeForm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D72BB6EE65BB669ACE9B44B3651A0D8 /* FreeForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeForm.swift; sourceTree = "<group>"; };
+		8F441993905CB45D56D8F67D67160260 /* Validator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Validator-dummy.m"; sourceTree = "<group>"; };
+		91D6CA590F0F891424229B208DBFAA8E /* Pods_FreeForm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FreeForm_Tests.framework; path = "Pods-FreeForm_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92EA2B0587B22D0F171D6EFE7AC82EB9 /* FreeFormSegmentedCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormSegmentedCell.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C2CF69CD75B0FA42D89155FE7A757A0 /* FreeFormStepperCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormStepperCell.xib; sourceTree = "<group>"; };
+		9F135E1C8C422622C6F5CF643B1DC0E0 /* Validator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Validator.framework; path = Validator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0265F9F4FB6FA660FA9BBF9ECC550B5 /* ValidationRulePattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRulePattern.swift; path = Validator/Validator/Rules/ValidationRulePattern.swift; sourceTree = "<group>"; };
+		A1E2D269B153FB4CADA72133EEC0A56F /* FreeFormOptionsViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormOptionsViewController.xib; sourceTree = "<group>"; };
+		A3B811867D22B42BADC4914B52C9F7AA /* FreeForm.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FreeForm.bundle; path = FreeForm.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CFA7BB5A578787051DD76DBF9E45DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A8AECB1565CA7CB3F077CD0840890E07 /* Pods-FreeForm_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FreeForm_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A99C08AD63DEFE2D2DAE975F686CF361 /* FreeFormSegmentedCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormSegmentedCell.xib; sourceTree = "<group>"; };
-		AF56694C83E73389968470915D311500 /* FreeFormTextFieldCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormTextFieldCell.swift; sourceTree = "<group>"; };
-		C12903A4D2F04DF25A90FB3ECF6FADBD /* FreeForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FreeForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21887B2F74CF882EFCBFF3EE1B93721 /* FreeFormPushCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormPushCell.swift; sourceTree = "<group>"; };
+		B56C382B0F2B67A3D974358C1FCB1305 /* ValidationPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationPattern.swift; path = Validator/Validator/ValidationPattern.swift; sourceTree = "<group>"; };
+		BBA72DEE44B7F369C969450730B3A4D9 /* FreeFormTextCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormTextCell.xib; sourceTree = "<group>"; };
+		BC8206342512F9127217943425F45A96 /* FreeForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FreeForm.framework; path = FreeForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C169952BCA26605E585538381C2CED47 /* Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Validator/Validator/Validator.swift; sourceTree = "<group>"; };
+		C37D36B7FCACACB599D5C03DFAA87CE5 /* UITextField+Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Validator.swift"; path = "Validator/Validator/UIKit+Validator/UITextField+Validator.swift"; sourceTree = "<group>"; };
+		C88AD6159B0CD84EBD6582E9BF1F17B9 /* ValidationRuleContains.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRuleContains.swift; path = Validator/Validator/Rules/ValidationRuleContains.swift; sourceTree = "<group>"; };
 		C8FA73ACED5F9D65C98EA66B2F86F512 /* FreeForm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FreeForm-umbrella.h"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CBE64645911117F609C2EA14CAC42B90 /* FreeFormTextViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormTextViewCell.swift; sourceTree = "<group>"; };
 		CDC283D72ADABB4F4DD77CFE5C3141BD /* Pods-FreeForm_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FreeForm_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CEAD4B7DE882BE9FF01BE4850CD89D28 /* FreeFormTextViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormTextViewCell.swift; sourceTree = "<group>"; };
+		D08BC5BE5CDF91FFD59FDC86BE988E4A /* FreeFormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormCell.swift; sourceTree = "<group>"; };
 		D0E17D8E478389E69D16D66B2B5A6E0E /* Pods-FreeForm_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FreeForm_Example-umbrella.h"; sourceTree = "<group>"; };
+		D4D8D72A82A88B43C9B3C2CBDFF1A5F6 /* UISlider+Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISlider+Validator.swift"; path = "Validator/Validator/UIKit+Validator/UISlider+Validator.swift"; sourceTree = "<group>"; };
+		DA50918736B60603A3D3461127A9B5EC /* ValidationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationResult.swift; path = Validator/Validator/ValidationResult.swift; sourceTree = "<group>"; };
+		DB0BDD1C8C87FBE538528A9936D5E717 /* Validator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23B87E7C5DAA64F29AD7438287491A2 /* FreeFormTextCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FreeFormTextCell.swift; sourceTree = "<group>"; };
+		E7424C81071E2B6137F75A90F2904FF1 /* FreeFormTextFieldCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormTextFieldCell.xib; sourceTree = "<group>"; };
+		EAC8A89E3E5ADE54B93148A9851D02C5 /* FreeFormDatetimeCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FreeFormDatetimeCell.xib; sourceTree = "<group>"; };
 		EADF05510361C32523611E9D7F430DE7 /* Pods-FreeForm_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FreeForm_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EBC14F4C522C6A65979F2C24715F6952 /* Validator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Validator-prefix.pch"; sourceTree = "<group>"; };
+		EE409E138FE106C7FAC78E0D64CA4AF1 /* UITextView+Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Validator.swift"; path = "Validator/Validator/UIKit+Validator/UITextView+Validator.swift"; sourceTree = "<group>"; };
 		EFED21FC2220BE05142AA0243943F42E /* Pods-FreeForm_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FreeForm_Tests-umbrella.h"; sourceTree = "<group>"; };
-		FB6704A5C1D2F38B2059844A0F6F78BD /* Pods-FreeForm_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FreeForm_Example.modulemap"; sourceTree = "<group>"; };
+		F0CCB28C9AF61CD168017942BE53E15E /* Pods_FreeForm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FreeForm_Example.framework; path = "Pods-FreeForm_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6704A5C1D2F38B2059844A0F6F78BD /* Pods-FreeForm_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FreeForm_Example.modulemap"; sourceTree = "<group>"; };
 		FF039A7BEA0273F9EB1E76BD580FB65F /* Pods-FreeForm_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FreeForm_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		905CB5D49FD766D46646FA0429E08EEF /* Frameworks */ = {
+		341B35B1EAE7FB2AC9A89172EC1396D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41357C89A80784A9D2B350A4DEC3FBC /* Foundation.framework in Frameworks */,
+				8963DE7E030E6B35F6B7DB87F0F1CE6D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB5C8D54B7D1973A48A377992BAFDB0D /* Frameworks */ = {
+		3848198C542E5706F8489B9A4FE43240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE08BFC4518CBE546D1F888932E823A /* Foundation.framework in Frameworks */,
+				AE55DC181507417930AE8E88B45D7468 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		751A17E3F8F4083865D965D17D8E5B35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -157,28 +238,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC18D14EDDFD4F908CDCA52665F59607 /* Frameworks */ = {
+		F4A50F4126BC4D999E73A33C2F38124E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7CE41CB7E8C4D5ABFAFD4E16202B312 /* Foundation.framework in Frameworks */,
+				D6443915FAE49F0AB0FDC204C183F652 /* Foundation.framework in Frameworks */,
+				637A4E8472A0A64CC91C2E0C710B26F7 /* Validator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		063A50D06CB7B52A54141717D0A686B7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				40594B3227C69215118AFCAF91827A68 /* FreeForm.bundle */,
-				C12903A4D2F04DF25A90FB3ECF6FADBD /* FreeForm.framework */,
-				5F8DB0D8BD16AA5EA46861F872A86DF9 /* Pods_FreeForm_Example.framework */,
-				9A1643E99D7ACDCCBCE5DDDEF425CF35 /* Pods_FreeForm_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		1872A208B8722824B65083737B1DFDB5 /* Pods-FreeForm_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,38 +266,6 @@
 			);
 			name = "Pods-FreeForm_Tests";
 			path = "Target Support Files/Pods-FreeForm_Tests";
-			sourceTree = "<group>";
-		};
-		2182F371D392DC39B159B64CA7711E2B /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1C77FE81F0036071F3BB060F16536C35 /* FreeFormViewController.swift */,
-				9D72BB6EE65BB669ACE9B44B3651A0D8 /* FreeForm.swift */,
-				31475F9DBD1FCC7E5CB2B7CA129E9954 /* FreeFormCell.swift */,
-				63675C871E1B9BE9009DB4B0 /* FreeFormButtonCell.swift */,
-				63675C881E1B9BE9009DB4B0 /* FreeFormButtonCell.xib */,
-				50D5CF83F901EF4C4543AB32A3083FA5 /* FreeFormSegmentedCell.swift */,
-				A99C08AD63DEFE2D2DAE975F686CF361 /* FreeFormSegmentedCell.xib */,
-				AF56694C83E73389968470915D311500 /* FreeFormTextFieldCell.swift */,
-				29C5AA453E6DA42E7EFEF789041B4416 /* FreeFormTextFieldCell.xib */,
-				CBE64645911117F609C2EA14CAC42B90 /* FreeFormTextViewCell.swift */,
-				8421F4873F72F7F69BBFE9C74DB63FC5 /* FreeFormTextViewCell.xib */,
-				63675C8D1E1BA7C5009DB4B0 /* FreeFormStepperCell.swift */,
-				63675C8E1E1BA7C5009DB4B0 /* FreeFormStepperCell.xib */,
-				63675C931E1CC4D7009DB4B0 /* FreeFormTextCell.swift */,
-				63675C941E1CC4D7009DB4B0 /* FreeFormTextCell.xib */,
-				63675C981E1CE0F8009DB4B0 /* FreeFormSwitchCell.swift */,
-				63675C991E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib */,
-				63675C9D1E1CE92B009DB4B0 /* FreeFormDatetimeCell.swift */,
-				63675C9E1E1CE92B009DB4B0 /* FreeFormDatetimeCell.xib */,
-				63675CCE1E1D72CE009DB4B0 /* FreeFormPushCell.swift */,
-				63675CCF1E1D72CE009DB4B0 /* FreeFormPushCell.xib */,
-				63675CD81E1DF42C009DB4B0 /* FreeFormOptionCell.swift */,
-				63675CD91E1DF42C009DB4B0 /* FreeFormOptionCell.xib */,
-				63675CD31E1DF31A009DB4B0 /* FreeFormOptionsViewController.swift */,
-				63675CD41E1DF31A009DB4B0 /* FreeFormOptionsViewController.xib */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		327EEE3B988EFD54C9BEB23F5B45A81A /* Pods-FreeForm_Example */ = {
@@ -262,15 +301,33 @@
 			path = "Example/Pods/Target Support Files/FreeForm";
 			sourceTree = "<group>";
 		};
+		568C22722DB9C8551C6EE777248DDB70 /* FreeForm */ = {
+			isa = PBXGroup;
+			children = (
+				E09F88188970B4D2F46188E2601108DB /* Classes */,
+			);
+			name = FreeForm;
+			path = FreeForm;
+			sourceTree = "<group>";
+		};
 		658D1F4514F13256D0A55339944FEEAB /* FreeForm */ = {
 			isa = PBXGroup;
 			children = (
-				AD663F8BDF658043E55E92A8CFFB07D9 /* FreeForm */,
+				568C22722DB9C8551C6EE777248DDB70 /* FreeForm */,
 				7D82A0C9A1B89DC9C528BB2F06939A81 /* Resources */,
 				4C4A495EE783EF883FCCCF09F51559D4 /* Support Files */,
 			);
 			name = FreeForm;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		659B676EDA7F6F63DA5158D49BB556A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB0BDD1C8C87FBE538528A9936D5E717 /* Validator.framework */,
+				8E66B74FB0540367F96F4255AAF109FA /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		70335773B2442F01BEC824FD30611769 /* Targets Support Files */ = {
@@ -280,14 +337,6 @@
 				1872A208B8722824B65083737B1DFDB5 /* Pods-FreeForm_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		7D82A0C9A1B89DC9C528BB2F06939A81 /* Resources */ = {
@@ -303,8 +352,9 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				B81D17D111C0E7B61BBB0CD84A64879B /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				063A50D06CB7B52A54141717D0A686B7 /* Products */,
+				659B676EDA7F6F63DA5158D49BB556A8 /* Frameworks */,
+				906C82496B75845E637C715B08F8420C /* Pods */,
+				80DC74EC30650FB05C97C3ABBFFD486E /* Products */,
 				70335773B2442F01BEC824FD30611769 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -313,7 +363,68 @@
 			isa = PBXGroup;
 			children = (
 			);
+			name = Classes;
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		80DC74EC30650FB05C97C3ABBFFD486E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3B811867D22B42BADC4914B52C9F7AA /* FreeForm.bundle */,
+				BC8206342512F9127217943425F45A96 /* FreeForm.framework */,
+				F0CCB28C9AF61CD168017942BE53E15E /* Pods_FreeForm_Example.framework */,
+				91D6CA590F0F891424229B208DBFAA8E /* Pods_FreeForm_Tests.framework */,
+				9F135E1C8C422622C6F5CF643B1DC0E0 /* Validator.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E66B74FB0540367F96F4255AAF109FA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A5CFA7BB5A578787051DD76DBF9E45DF /* Foundation.framework */,
+				407878EED1227C6FAFFCAEA23AA212B3 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9049C1721E8D67A41ADB004E7D49C909 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				575AC0C8FC4E6678601ACD5AB95AFC1D /* CaseValidationPattern.swift */,
+				0FEAD8A83E22000114993678E4E8120F /* ContainsNumberValidationPattern.swift */,
+				518EC54B43A0AE31A8591155EFFD212C /* EmailValidationPattern.swift */,
+				D4D8D72A82A88B43C9B3C2CBDFF1A5F6 /* UISlider+Validator.swift */,
+				C37D36B7FCACACB599D5C03DFAA87CE5 /* UITextField+Validator.swift */,
+				EE409E138FE106C7FAC78E0D64CA4AF1 /* UITextView+Validator.swift */,
+				107FC412C5849B676DB7D9EC13085534 /* Validatable.swift */,
+				6D727C190C6B0B542BBD865B2CE97639 /* ValidatableInterfaceElement.swift */,
+				B56C382B0F2B67A3D974358C1FCB1305 /* ValidationPattern.swift */,
+				DA50918736B60603A3D3461127A9B5EC /* ValidationResult.swift */,
+				4FFF5DA631AFD8522AF27DCED89D1ED8 /* ValidationRule.swift */,
+				1C53F6377FA766416BA67601B3F24459 /* ValidationRuleComparison.swift */,
+				0D7203AE21BEF85C8247D3C81ED445C7 /* ValidationRuleCondition.swift */,
+				C88AD6159B0CD84EBD6582E9BF1F17B9 /* ValidationRuleContains.swift */,
+				620B483C8DB8E9670158A2419E8D60AD /* ValidationRuleEquality.swift */,
+				0A8AE4905284E23248C161D4D78DD4E0 /* ValidationRuleLength.swift */,
+				A0265F9F4FB6FA660FA9BBF9ECC550B5 /* ValidationRulePattern.swift */,
+				3C69799A04658DB888258301680FAD30 /* ValidationRulePaymentCard.swift */,
+				22743994D6E0C750DD4CA772C873B909 /* ValidationRuleRequired.swift */,
+				0D18CF3A9B5A6D9A4A7C211D57928557 /* ValidationRuleSet.swift */,
+				14F35070D579100A284C86E70B0E898B /* ValidationRuleURL.swift */,
+				C169952BCA26605E585538381C2CED47 /* Validator.swift */,
+				BDE7D55D12ABC1A3E6F2C2F9163BC100 /* Support Files */,
+			);
+			name = Validator;
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		906C82496B75845E637C715B08F8420C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9049C1721E8D67A41ADB004E7D49C909 /* Validator */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A74A013A09FC2123512E61EAB7E034F8 /* FreeForm */ = {
@@ -321,14 +432,7 @@
 			children = (
 				7F4AA68C34D86C8F98A768DED9E57574 /* Classes */,
 			);
-			path = FreeForm;
-			sourceTree = "<group>";
-		};
-		AD663F8BDF658043E55E92A8CFFB07D9 /* FreeForm */ = {
-			isa = PBXGroup;
-			children = (
-				2182F371D392DC39B159B64CA7711E2B /* Classes */,
-			);
+			name = FreeForm;
 			path = FreeForm;
 			sourceTree = "<group>";
 		};
@@ -340,12 +444,51 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		BDE7D55D12ABC1A3E6F2C2F9163BC100 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				30C56E76496B86B9FCB0AF13B235A08A /* Info.plist */,
+				679B59C36ADFD234412A6CEB6A1E8A05 /* Validator.modulemap */,
+				29D0C9A9E01D15FDA202973F5A996058 /* Validator.xcconfig */,
+				8F441993905CB45D56D8F67D67160260 /* Validator-dummy.m */,
+				EBC14F4C522C6A65979F2C24715F6952 /* Validator-prefix.pch */,
+				1B01C56BF3EC0C547047CFB45825C908 /* Validator-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Validator";
+			sourceTree = "<group>";
+		};
+		E09F88188970B4D2F46188E2601108DB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2877F57174B9142E0DB17F859650FDDD /* FreeForm.swift */,
+				7A87322423DFD42A8EDBFB0F8C24FE8E /* FreeFormButtonCell.swift */,
+				21CC2963062193BC94A152146C2D63CA /* FreeFormButtonCell.xib */,
+				D08BC5BE5CDF91FFD59FDC86BE988E4A /* FreeFormCell.swift */,
+				5ABDA336B2C66F7949C0F7395F8FBC05 /* FreeFormDatetimeCell.swift */,
+				EAC8A89E3E5ADE54B93148A9851D02C5 /* FreeFormDatetimeCell.xib */,
+				6CED5959B7B608DE473C4198329E4D43 /* FreeFormOptionCell.swift */,
+				650D8CA851583018AA43437DCBA73282 /* FreeFormOptionCell.xib */,
+				000BF3729D28B24531535E7E67F01E1E /* FreeFormOptionsViewController.swift */,
+				A1E2D269B153FB4CADA72133EEC0A56F /* FreeFormOptionsViewController.xib */,
+				B21887B2F74CF882EFCBFF3EE1B93721 /* FreeFormPushCell.swift */,
+				34E17C31CAE4C3A745D21C6795CA4F69 /* FreeFormPushCell.xib */,
+				92EA2B0587B22D0F171D6EFE7AC82EB9 /* FreeFormSegmentedCell.swift */,
+				23377C172DC31705A6A9EC03E7C17419 /* FreeFormSegmentedCell.xib */,
+				14006A91E11E1D2ADA6B046F10CF33D8 /* FreeFormStepperCell.swift */,
+				9C2CF69CD75B0FA42D89155FE7A757A0 /* FreeFormStepperCell.xib */,
+				51855050ECAC86B123D1FEA46C8E0BF2 /* FreeFormSwitchCell.swift */,
+				57187290B7FCEF44637115788DD5334A /* FreeFormSwitchCell.xib */,
+				E23B87E7C5DAA64F29AD7438287491A2 /* FreeFormTextCell.swift */,
+				BBA72DEE44B7F369C969450730B3A4D9 /* FreeFormTextCell.xib */,
+				042C7CD7787225BB64763E9D056C319D /* FreeFormTextFieldCell.swift */,
+				E7424C81071E2B6137F75A90F2904FF1 /* FreeFormTextFieldCell.xib */,
+				CEAD4B7DE882BE9FF01BE4850CD89D28 /* FreeFormTextViewCell.swift */,
+				720A13D8D5EDDBB855350FE6E7295C02 /* FreeFormTextViewCell.xib */,
+				57525349E2C139B1576B072151565A86 /* FreeFormViewController.swift */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,43 +502,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1D9E033558F9CECEA04F6D8F12F07DB /* Headers */ = {
+		734D9B1E586F2EFEB6A740FAB270C297 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				539A275851AF1D1A91C083F7108E6C6F /* FreeForm-umbrella.h in Headers */,
+				1A4273DB1E7DC5DFD7A1E6330AE14AFB /* Validator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDD875D8A4486F3DB9DBD21CD6503515 /* Headers */ = {
+		89121DA920CD2446A5FC2D7064D461DC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				335D26F18D7D38C1A010AEF02B344590 /* Pods-FreeForm_Example-umbrella.h in Headers */,
+				0D87FCE0CC969E5A96B9ED085E6191AA /* FreeForm-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AFC827722DCBED72CFE086AA2B0148 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D0B0AF318E2C7629714E39E23929DA /* Pods-FreeForm_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1779374E62A98E7C08946D301591E401 /* Pods-FreeForm_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1F0794621B950A268A23D088A7529F4C /* Build configuration list for PBXNativeTarget "Pods-FreeForm_Example" */;
-			buildPhases = (
-				20B4A43EAC92AB1BC986CA262CDAAD4C /* Sources */,
-				EC18D14EDDFD4F908CDCA52665F59607 /* Frameworks */,
-				DDD875D8A4486F3DB9DBD21CD6503515 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AFBE8935B6FF7804C98DB9C24035FDAC /* PBXTargetDependency */,
-			);
-			name = "Pods-FreeForm_Example";
-			productName = "Pods-FreeForm_Example";
-			productReference = 5F8DB0D8BD16AA5EA46861F872A86DF9 /* Pods_FreeForm_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		6766D52321BC573B58B9BE37C2D19206 /* Pods-FreeForm_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7F97C2EA67F25FC6E68BEE93CFBA3CE /* Build configuration list for PBXNativeTarget "Pods-FreeForm_Tests" */;
@@ -410,16 +543,16 @@
 			);
 			name = "Pods-FreeForm_Tests";
 			productName = "Pods-FreeForm_Tests";
-			productReference = 9A1643E99D7ACDCCBCE5DDDEF425CF35 /* Pods_FreeForm_Tests.framework */;
+			productReference = 91D6CA590F0F891424229B208DBFAA8E /* Pods_FreeForm_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9C5728BD701816A23E99565AD47BDF08 /* FreeForm-FreeForm */ = {
+		69C14264475F8E07F6F081E62B212ED2 /* FreeForm-FreeForm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41A637CC81C1B4FD56AEF71539AB9B90 /* Build configuration list for PBXNativeTarget "FreeForm-FreeForm" */;
+			buildConfigurationList = 7621C17F0F09C37C919B93AB7BB7AB3B /* Build configuration list for PBXNativeTarget "FreeForm-FreeForm" */;
 			buildPhases = (
-				0B28F26AF58D04E9442BCD5502195F15 /* Sources */,
-				BB5C8D54B7D1973A48A377992BAFDB0D /* Frameworks */,
-				4E411678D492A0355D2B355C719E6AA1 /* Resources */,
+				349827074C742D581690A15894B18C2F /* Sources */,
+				751A17E3F8F4083865D965D17D8E5B35 /* Frameworks */,
+				6765771A0B8FE2D53AECF4A1F9569C60 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -427,26 +560,63 @@
 			);
 			name = "FreeForm-FreeForm";
 			productName = "FreeForm-FreeForm";
-			productReference = 40594B3227C69215118AFCAF91827A68 /* FreeForm.bundle */;
+			productReference = A3B811867D22B42BADC4914B52C9F7AA /* FreeForm.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		B16783F71AD4B4A7AC7AD98864EBD1B1 /* FreeForm */ = {
+		72A8888E68B93206ACCD16AE7A4F5492 /* FreeForm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4DE3089BEBC9C3C9ABD89999338F266C /* Build configuration list for PBXNativeTarget "FreeForm" */;
+			buildConfigurationList = 268C967684E0A34EFBFEDDAD596772D7 /* Build configuration list for PBXNativeTarget "FreeForm" */;
 			buildPhases = (
-				BCDA47955575510C276BF70351211093 /* Sources */,
-				905CB5D49FD766D46646FA0429E08EEF /* Frameworks */,
-				86A98CD80030B7A3300C46B855A866DA /* Resources */,
-				A1D9E033558F9CECEA04F6D8F12F07DB /* Headers */,
+				5171F3CF8531E5C6AE5F2865A4F3C992 /* Sources */,
+				F4A50F4126BC4D999E73A33C2F38124E /* Frameworks */,
+				F6BECC3A72703C4B561607B19C6ABAEC /* Resources */,
+				89121DA920CD2446A5FC2D7064D461DC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC065D5AF94F8E975E0F9FCB57B9D365 /* PBXTargetDependency */,
+				69DB4AEEC06B1B0763E8653CA3EFC44F /* PBXTargetDependency */,
+				DF5A4B9C24B2E84634FD201240B21FDE /* PBXTargetDependency */,
 			);
 			name = FreeForm;
 			productName = FreeForm;
-			productReference = C12903A4D2F04DF25A90FB3ECF6FADBD /* FreeForm.framework */;
+			productReference = BC8206342512F9127217943425F45A96 /* FreeForm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		81EB3ED47F7E6693F560CE2DF858BB60 /* Validator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2090080853B2F97F67DE4705EA4A233 /* Build configuration list for PBXNativeTarget "Validator" */;
+			buildPhases = (
+				82DF3C6871AB88E85EF2DA454E162BEC /* Sources */,
+				3848198C542E5706F8489B9A4FE43240 /* Frameworks */,
+				734D9B1E586F2EFEB6A740FAB270C297 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Validator;
+			productName = Validator;
+			productReference = 9F135E1C8C422622C6F5CF643B1DC0E0 /* Validator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DEC9CF4C1E9E09D45DA8068DA169AF61 /* Pods-FreeForm_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E4FD125A08CC12C834527D24AB85E15 /* Build configuration list for PBXNativeTarget "Pods-FreeForm_Example" */;
+			buildPhases = (
+				27D38232E78CDBF6CD7DBFD64272A59C /* Sources */,
+				341B35B1EAE7FB2AC9A89172EC1396D6 /* Frameworks */,
+				F4AFC827722DCBED72CFE086AA2B0148 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DAB50ED8681BF08CE2D743757DB9831 /* PBXTargetDependency */,
+				3BADD5A274012213E3E4072614551C83 /* PBXTargetDependency */,
+			);
+			name = "Pods-FreeForm_Example";
+			productName = "Pods-FreeForm_Example";
+			productReference = F0CCB28C9AF61CD168017942BE53E15E /* Pods_FreeForm_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -457,11 +627,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					9C5728BD701816A23E99565AD47BDF08 = {
-						LastSwiftMigration = 0810;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -471,93 +636,124 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 063A50D06CB7B52A54141717D0A686B7 /* Products */;
+			productRefGroup = 80DC74EC30650FB05C97C3ABBFFD486E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B16783F71AD4B4A7AC7AD98864EBD1B1 /* FreeForm */,
-				9C5728BD701816A23E99565AD47BDF08 /* FreeForm-FreeForm */,
-				1779374E62A98E7C08946D301591E401 /* Pods-FreeForm_Example */,
+				72A8888E68B93206ACCD16AE7A4F5492 /* FreeForm */,
+				69C14264475F8E07F6F081E62B212ED2 /* FreeForm-FreeForm */,
+				DEC9CF4C1E9E09D45DA8068DA169AF61 /* Pods-FreeForm_Example */,
 				6766D52321BC573B58B9BE37C2D19206 /* Pods-FreeForm_Tests */,
+				81EB3ED47F7E6693F560CE2DF858BB60 /* Validator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4E411678D492A0355D2B355C719E6AA1 /* Resources */ = {
+		6765771A0B8FE2D53AECF4A1F9569C60 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66124DBFCB4953355088765F73CC6CAF /* FreeFormSegmentedCell.xib in Resources */,
-				63675CD21E1D72D7009DB4B0 /* FreeFormPushCell.xib in Resources */,
-				63675C921E1BA7C5009DB4B0 /* FreeFormStepperCell.xib in Resources */,
-				63675CD71E1DF325009DB4B0 /* FreeFormOptionsViewController.xib in Resources */,
-				63675C971E1CC4E3009DB4B0 /* FreeFormTextCell.xib in Resources */,
-				63675C8B1E1BA102009DB4B0 /* FreeFormButtonCell.xib in Resources */,
-				63675CA11E1CEA98009DB4B0 /* FreeFormDatetimeCell.xib in Resources */,
-				63675CDC1E1DFC9A009DB4B0 /* FreeFormOptionCell.xib in Resources */,
-				3211BFABE0CABDD23F714BF7A7EE0996 /* FreeFormTextFieldCell.xib in Resources */,
-				63675C9C1E1CE102009DB4B0 /* FreeFormSwitchCell.xib in Resources */,
-				3825C39BBF1701A4A4633C2200E22D8F /* FreeFormTextViewCell.xib in Resources */,
+				0F3A6F35C2FD317BCF40B89426745F17 /* FreeFormButtonCell.xib in Resources */,
+				9DA8F3D136A597B28EB936F2EE6D9530 /* FreeFormDatetimeCell.xib in Resources */,
+				387352F1137704007342134D737A7EFE /* FreeFormOptionCell.xib in Resources */,
+				91176EF8ABD107019EDE1D3FE8E4738A /* FreeFormOptionsViewController.xib in Resources */,
+				86736C1C039829F83EE27619DB90D5BB /* FreeFormPushCell.xib in Resources */,
+				DE12EF4BAF26906CAFBE43B3CA2B9701 /* FreeFormSegmentedCell.xib in Resources */,
+				0A8B1AEBD5B049AACE7838AD761CCA3C /* FreeFormStepperCell.xib in Resources */,
+				53C0407B34EC786276AB7706B4AAA8D0 /* FreeFormSwitchCell.xib in Resources */,
+				64D1C86687E039E042874D7CB817C434 /* FreeFormTextCell.xib in Resources */,
+				76D0BADB6AFA2652A63326014226D20F /* FreeFormTextFieldCell.xib in Resources */,
+				605F853F7C04FDC28A5203A00FB3A208 /* FreeFormTextViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86A98CD80030B7A3300C46B855A866DA /* Resources */ = {
+		F6BECC3A72703C4B561607B19C6ABAEC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63675CD11E1D72CE009DB4B0 /* FreeFormPushCell.xib in Resources */,
-				63675CD61E1DF31A009DB4B0 /* FreeFormOptionsViewController.xib in Resources */,
-				63675C961E1CC4D7009DB4B0 /* FreeFormTextCell.xib in Resources */,
-				63675C911E1BA7C5009DB4B0 /* FreeFormStepperCell.xib in Resources */,
-				0C0D252AFCF3647DBB384A29B3F15DC3 /* FreeForm.bundle in Resources */,
-				63675C8A1E1B9BE9009DB4B0 /* FreeFormButtonCell.xib in Resources */,
-				63675CA01E1CE92B009DB4B0 /* FreeFormDatetimeCell.xib in Resources */,
-				63675C9B1E1CE0F8009DB4B0 /* FreeFormSwitchCell.xib in Resources */,
-				63675CDB1E1DF42C009DB4B0 /* FreeFormOptionCell.xib in Resources */,
+				098DCB18DA2792CB467FB8A88EC69F20 /* FreeForm.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B28F26AF58D04E9442BCD5502195F15 /* Sources */ = {
+		27D38232E78CDBF6CD7DBFD64272A59C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B8259692AE1007D2ABAAC9CE259862 /* Pods-FreeForm_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349827074C742D581690A15894B18C2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20B4A43EAC92AB1BC986CA262CDAAD4C /* Sources */ = {
+		5171F3CF8531E5C6AE5F2865A4F3C992 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6FBFC8AF8583B609F1CF3DDB377012C /* Pods-FreeForm_Example-dummy.m in Sources */,
+				A729A51BB1101267618F7A5819DA470A /* FreeForm-dummy.m in Sources */,
+				EF8D11F0BC7E2084ED702E3A6632CDE2 /* FreeForm.swift in Sources */,
+				D287CCB9777EB34E8A003EA9C6BFBE63 /* FreeFormButtonCell.swift in Sources */,
+				625070AB03A3DCCF7912F5F7F097BAD1 /* FreeFormButtonCell.xib in Sources */,
+				E60DB6A2183679B01EB236F00322DF14 /* FreeFormCell.swift in Sources */,
+				14EEDA4E00829CB871058AE132A927B2 /* FreeFormDatetimeCell.swift in Sources */,
+				626479E9FE4E3A98E3BDD562B6826799 /* FreeFormDatetimeCell.xib in Sources */,
+				525A014EF0F838010331B76B267E1B66 /* FreeFormOptionCell.swift in Sources */,
+				4232C48128415FFB08127FB7557C4499 /* FreeFormOptionCell.xib in Sources */,
+				4743D2091CB9EAB1EF51DC1E00B1E477 /* FreeFormOptionsViewController.swift in Sources */,
+				C24112D3F5FDABF8BADDC27C43A10BE8 /* FreeFormOptionsViewController.xib in Sources */,
+				4864677E086D0C9436FD7BD06A17EF4C /* FreeFormPushCell.swift in Sources */,
+				1F4422A49E4BABD8899305A1606F8E44 /* FreeFormPushCell.xib in Sources */,
+				11E7E58EF6E9B61A09CC1FC8C2A42487 /* FreeFormSegmentedCell.swift in Sources */,
+				6BEDEF4EBD1EA0763E0E1F7F47F4C4E8 /* FreeFormSegmentedCell.xib in Sources */,
+				FA0EABBAC55146E1C1A0D4F2262F117E /* FreeFormStepperCell.swift in Sources */,
+				8C058113920D7E63BDB92E64A2026382 /* FreeFormStepperCell.xib in Sources */,
+				76CE84F28D477A74479C33867D60398B /* FreeFormSwitchCell.swift in Sources */,
+				A09F57F2C8BCAB7F22574AE8A65B2D57 /* FreeFormSwitchCell.xib in Sources */,
+				1BBF91F56E29A30A951FCE7AE1F5DE86 /* FreeFormTextCell.swift in Sources */,
+				2EA387D49536902AFF59DC9C2AD2E489 /* FreeFormTextCell.xib in Sources */,
+				818D03DCCC54C5EED6E48A7E4AD87FBA /* FreeFormTextFieldCell.swift in Sources */,
+				95DFA6655C8BDC96ECC9767EF49367D5 /* FreeFormTextFieldCell.xib in Sources */,
+				C2BEE305EAC26DEFC1B11F40ED21788F /* FreeFormTextViewCell.swift in Sources */,
+				AA1014EB016B2E9A2445CDCA18B3C548 /* FreeFormTextViewCell.xib in Sources */,
+				F4320A19AB33CB89C2E3AC40C5652F83 /* FreeFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCDA47955575510C276BF70351211093 /* Sources */ = {
+		82DF3C6871AB88E85EF2DA454E162BEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63675CDA1E1DF42C009DB4B0 /* FreeFormOptionCell.swift in Sources */,
-				63675C951E1CC4D7009DB4B0 /* FreeFormTextCell.swift in Sources */,
-				8E65BBAFBB4DA47AB0A03F50EF42125C /* FreeForm-dummy.m in Sources */,
-				63675C8F1E1BA7C5009DB4B0 /* FreeFormStepperCell.swift in Sources */,
-				CAE4E1B5F53A0E1F886CFD53DDDCC80F /* FreeForm.swift in Sources */,
-				1AB6704D81979B44CFFE91444847716A /* FreeFormCell.swift in Sources */,
-				63675C9F1E1CE92B009DB4B0 /* FreeFormDatetimeCell.swift in Sources */,
-				20B8ED2446A8BBE4F607AD90124D0A88 /* FreeFormSegmentedCell.swift in Sources */,
-				63675CD01E1D72CE009DB4B0 /* FreeFormPushCell.swift in Sources */,
-				CBFC7BC44D16C9F55DF1A99635DD8471 /* FreeFormSegmentedCell.xib in Sources */,
-				63675C891E1B9BE9009DB4B0 /* FreeFormButtonCell.swift in Sources */,
-				68BDB64872C97B52724787EB9A9CD0FB /* FreeFormTextFieldCell.swift in Sources */,
-				C5ACE3168C529D8029C2DD4617EEE9FE /* FreeFormTextFieldCell.xib in Sources */,
-				038A1655FC49FD66FAE057601C005BE7 /* FreeFormTextViewCell.swift in Sources */,
-				63675C9A1E1CE0F8009DB4B0 /* FreeFormSwitchCell.swift in Sources */,
-				45526B8B45E78B439F6B5FE8BE83133C /* FreeFormTextViewCell.xib in Sources */,
-				C02A4EAB4D96352C06B0C99551F0BA98 /* FreeFormViewController.swift in Sources */,
-				63675CD51E1DF31A009DB4B0 /* FreeFormOptionsViewController.swift in Sources */,
+				CD2832D33873B0BB9EB67C973B8B4FEF /* CaseValidationPattern.swift in Sources */,
+				6191445D6A8C3EEA12CD4C2B37E59C3F /* ContainsNumberValidationPattern.swift in Sources */,
+				69CECA37A11FE751F8897EF0AF76662E /* EmailValidationPattern.swift in Sources */,
+				70BD73D000BA1798D61E089072602628 /* UISlider+Validator.swift in Sources */,
+				AE3320ABC5BECDE2683C63FC786BAFE2 /* UITextField+Validator.swift in Sources */,
+				272F2A3E64EE32878805C04E825DC0AD /* UITextView+Validator.swift in Sources */,
+				DAF4E3194253B2AB9A457D4FE34B491F /* Validatable.swift in Sources */,
+				1F42432E979AC4A0956E61E224C3F3B8 /* ValidatableInterfaceElement.swift in Sources */,
+				38572FAB8F0D1D27B4D7FFC49BA2770F /* ValidationPattern.swift in Sources */,
+				F13EE8A6EA6A9D6EE06EBE6688FBBBB0 /* ValidationResult.swift in Sources */,
+				609C2EABA651AC34D11AB13883E0527C /* ValidationRule.swift in Sources */,
+				09DD5B84AFB98453F711B7B82F9F78DC /* ValidationRuleComparison.swift in Sources */,
+				04E55B971C9B9E6045876D14D3420619 /* ValidationRuleCondition.swift in Sources */,
+				2DAEB219E15AF076ECCDBA67040C8E62 /* ValidationRuleContains.swift in Sources */,
+				33E510AA05B9C44668FDE0AC04E793DF /* ValidationRuleEquality.swift in Sources */,
+				4ED1BC6444CA3FB296512EF1B798758B /* ValidationRuleLength.swift in Sources */,
+				2E7EAA96CC2EB21E19782FA33086A89B /* ValidationRulePattern.swift in Sources */,
+				7D8965B21FB93DDC69618A87F7F56672 /* ValidationRulePaymentCard.swift in Sources */,
+				1B3D0011A0964CBD1AA4B7618C7CF333 /* ValidationRuleRequired.swift in Sources */,
+				132944A4CCC43AF1CF84EA1793504AD0 /* ValidationRuleSet.swift in Sources */,
+				1A9654FAC6FD260E0D59474CDA8A52C8 /* ValidationRuleURL.swift in Sources */,
+				57E7F7C081502E5933A3B46C6BBF234F /* Validator-dummy.m in Sources */,
+				AFE7F0CEA7E28A415C95085906F61B73 /* Validator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,17 +768,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AFBE8935B6FF7804C98DB9C24035FDAC /* PBXTargetDependency */ = {
+		3BADD5A274012213E3E4072614551C83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FreeForm;
-			target = B16783F71AD4B4A7AC7AD98864EBD1B1 /* FreeForm */;
-			targetProxy = 8B0570B65CA2B716D24E9E8301896C99 /* PBXContainerItemProxy */;
+			name = Validator;
+			target = 81EB3ED47F7E6693F560CE2DF858BB60 /* Validator */;
+			targetProxy = E2F81C7D23BFAC3FCD64C6A418EDDAB0 /* PBXContainerItemProxy */;
 		};
-		EC065D5AF94F8E975E0F9FCB57B9D365 /* PBXTargetDependency */ = {
+		69DB4AEEC06B1B0763E8653CA3EFC44F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "FreeForm-FreeForm";
-			target = 9C5728BD701816A23E99565AD47BDF08 /* FreeForm-FreeForm */;
-			targetProxy = 32FBFC446D58B45D10835C364BEFD29A /* PBXContainerItemProxy */;
+			target = 69C14264475F8E07F6F081E62B212ED2 /* FreeForm-FreeForm */;
+			targetProxy = 5754B47BE99C3669E5DEF4AE618599B9 /* PBXContainerItemProxy */;
+		};
+		8DAB50ED8681BF08CE2D743757DB9831 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FreeForm;
+			target = 72A8888E68B93206ACCD16AE7A4F5492 /* FreeForm */;
+			targetProxy = 4832F84CDC082C00BF00764B1F6ED25B /* PBXContainerItemProxy */;
+		};
+		DF5A4B9C24B2E84634FD201240B21FDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Validator;
+			target = 81EB3ED47F7E6693F560CE2DF858BB60 /* Validator */;
+			targetProxy = 054FCACFAE3A9B4373C9905BBBADB272 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -622,9 +830,26 @@
 			};
 			name = Release;
 		};
-		2378B215986E3F7EFFAEE03AF63CD7D2 /* Debug */ = {
+		02050952B5A356B1A567B9C1F3FB366E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4604C6F37B5ADB874BE996AC61F490C0 /* FreeForm.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FreeForm";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/FreeForm/ResourceBundle-FreeForm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FreeForm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		05F63830A27CBFA6A38A99C89F33FA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8AECB1565CA7CB3F077CD0840890E07 /* Pods-FreeForm_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -637,25 +862,60 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FreeForm/FreeForm-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FreeForm/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FreeForm_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FreeForm/FreeForm.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FreeForm;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FreeForm_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		578663A4CD507E5F91696CB4977BF97D /* Release */ = {
+		3176AB3792EA93C4B128D01867E16A1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29D0C9A9E01D15FDA202973F5A996058 /* Validator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Validator/Validator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Validator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Validator/Validator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Validator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4FA93882F686D5898A2CFC62CF3F3CA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4604C6F37B5ADB874BE996AC61F490C0 /* FreeForm.xcconfig */;
 			buildSettings = {
@@ -687,27 +947,40 @@
 			};
 			name = Release;
 		};
-		7615E94B8A01D0D021B2FC5BCA42B02F /* Debug */ = {
+		5007671881D8AB6896818ACCF5EF40D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4604C6F37B5ADB874BE996AC61F490C0 /* FreeForm.xcconfig */;
+			baseConfigurationReference = 07A260659C0D6787A333D6128604F93E /* Pods-FreeForm_Example.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FreeForm";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/FreeForm/ResourceBundle-FreeForm-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = "Target Support Files/Pods-FreeForm_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = FreeForm;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FreeForm_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "../../FreeForm/Classes/FreeForm-FreeForm-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		766318E32E53779B763B05C276E2E2BB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -784,6 +1057,39 @@
 			};
 			name = Release;
 		};
+		9E182DD4A7C02C6DCCBF68B49CB77630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29D0C9A9E01D15FDA202973F5A996058 /* Validator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Validator/Validator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Validator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Validator/Validator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Validator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -828,30 +1134,9 @@
 			};
 			name = Debug;
 		};
-		A0948ED6686D83735AFF470C915CE97C /* Release */ = {
+		E3592E282CB955AB8EE9B1115C4A1EC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4604C6F37B5ADB874BE996AC61F490C0 /* FreeForm.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FreeForm";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/FreeForm/ResourceBundle-FreeForm-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = FreeForm;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "../../FreeForm/Classes/FreeForm-FreeForm-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		CBA7B4F4137C98783C211013941439AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8AECB1565CA7CB3F077CD0840890E07 /* Pods-FreeForm_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -864,70 +1149,49 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FreeForm_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FreeForm/FreeForm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FreeForm/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/FreeForm/FreeForm.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FreeForm_Example;
+				PRODUCT_NAME = FreeForm;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		F6E6F0D4D3A414A90E831A8910564CA8 /* Release */ = {
+		FD63CE10DC5B3E1AF7C4FD6E4E1FDD55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07A260659C0D6787A333D6128604F93E /* Pods-FreeForm_Example.release.xcconfig */;
+			baseConfigurationReference = 4604C6F37B5ADB874BE996AC61F490C0 /* FreeForm.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FreeForm";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FreeForm_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FreeForm_Example;
+				INFOPLIST_FILE = "Target Support Files/FreeForm/ResourceBundle-FreeForm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FreeForm;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F0794621B950A268A23D088A7529F4C /* Build configuration list for PBXNativeTarget "Pods-FreeForm_Example" */ = {
+		268C967684E0A34EFBFEDDAD596772D7 /* Build configuration list for PBXNativeTarget "FreeForm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBA7B4F4137C98783C211013941439AC /* Debug */,
-				F6E6F0D4D3A414A90E831A8910564CA8 /* Release */,
+				E3592E282CB955AB8EE9B1115C4A1EC1 /* Debug */,
+				4FA93882F686D5898A2CFC62CF3F3CA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -941,20 +1205,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41A637CC81C1B4FD56AEF71539AB9B90 /* Build configuration list for PBXNativeTarget "FreeForm-FreeForm" */ = {
+		2E4FD125A08CC12C834527D24AB85E15 /* Build configuration list for PBXNativeTarget "Pods-FreeForm_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7615E94B8A01D0D021B2FC5BCA42B02F /* Debug */,
-				A0948ED6686D83735AFF470C915CE97C /* Release */,
+				05F63830A27CBFA6A38A99C89F33FA82 /* Debug */,
+				5007671881D8AB6896818ACCF5EF40D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DE3089BEBC9C3C9ABD89999338F266C /* Build configuration list for PBXNativeTarget "FreeForm" */ = {
+		7621C17F0F09C37C919B93AB7BB7AB3B /* Build configuration list for PBXNativeTarget "FreeForm-FreeForm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2378B215986E3F7EFFAEE03AF63CD7D2 /* Debug */,
-				578663A4CD507E5F91696CB4977BF97D /* Release */,
+				02050952B5A356B1A567B9C1F3FB366E /* Debug */,
+				FD63CE10DC5B3E1AF7C4FD6E4E1FDD55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -964,6 +1228,15 @@
 			buildConfigurations = (
 				766318E32E53779B763B05C276E2E2BB /* Debug */,
 				000CB23541BB90D0C5AEABDA040318E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2090080853B2F97F67DE4705EA4A233 /* Build configuration list for PBXNativeTarget "Validator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E182DD4A7C02C6DCCBF68B49CB77630 /* Debug */,
+				3176AB3792EA93C4B128D01867E16A1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
