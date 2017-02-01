@@ -20,24 +20,36 @@ public class FreeFormTextFieldRow: FreeFormRow {
     }
     
     public func updateValidationState(text: String?, result: ValidationResult) -> Bool {
-        
-        guard text != nil else {
-            return self.isOptional
-        }
-        
-        guard text != "" else {
-            return self.isOptional
-        }
-        
-        switch result {
-        case .invalid(let failures):
-            self.validated = false
-            self.validationErrors = failures.map { $0.localizedDescription }
-            return false
-        case .valid:
-            self.validated = true
-            self.validationErrors?.removeAll()
-            return true
+        if self.isOptional == true {
+            if let content = text {
+                if content.characters.count > 0 {
+                    switch result {
+                    case .invalid(let failures):
+                        self.validated = false
+                        self.validationErrors = failures.map { $0.localizedDescription }
+                        return false
+                    case .valid:
+                        self.validated = true
+                        self.validationErrors?.removeAll()
+                        return true
+                    }
+                }else {
+                    return true
+                }
+            }else {
+                return true
+            }
+        }else {
+            switch result {
+            case .invalid(let failures):
+                self.validated = false
+                self.validationErrors = failures.map { $0.localizedDescription }
+                return false
+            case .valid:
+                self.validated = true
+                self.validationErrors?.removeAll()
+                return true
+            }
         }
     }
 }
