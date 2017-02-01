@@ -84,6 +84,7 @@ open class FreeFormRow: NSObject {
     public var hidden: Bool = false
     public var disable: Bool = false
     public var deletable: Bool = false
+    public var validated: Bool = true
     
     public var height: CGFloat = 55
     public var tintColor: UIColor = UIColor.blue
@@ -116,6 +117,15 @@ open class FreeFormRows: NSObject {
         return self.getShowingRow().count
     }
     
+    public var validated: Bool {
+        for row in self.array {
+            if row.validated == false {
+                return false
+            }
+        }
+        return true
+    }
+    
     public init(array: [FreeFormRow]) {
         self.array = array
     }
@@ -145,6 +155,10 @@ open class FreeFormSection: NSObject {
     
     public var rows = FreeFormRows(array: [])
     
+    public var validated: Bool {
+        return self.rows.validated
+    }
+    
     public init(tag: String, title: String) {
         self.tag = tag
         self.title = title
@@ -157,6 +171,15 @@ open class FreeFormSection: NSObject {
 
 open class FreeFormSections: NSObject {
     fileprivate var array: [FreeFormSection] = [FreeFormSection]()
+    
+    public var validated: Bool {
+        for section in self.array {
+            if section.validated == false {
+                return false
+            } 
+        }
+        return true
+    }
     
     subscript(index: Int) -> FreeFormSection {
         return array[index]
