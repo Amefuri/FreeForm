@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="273"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="272"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="272.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7v-T9-BmD">
@@ -56,9 +56,11 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="h7v-T9-BmD" secondAttribute="trailing" id="27Z-c9-1S5"/>
                     <constraint firstItem="mfi-df-X1A" firstAttribute="top" secondItem="h7v-T9-BmD" secondAttribute="bottom" constant="8" id="Eat-A5-QSG"/>
+                    <constraint firstItem="mfi-df-X1A" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="GSl-sd-zi2"/>
+                    <constraint firstAttribute="trailing" secondItem="mfi-df-X1A" secondAttribute="trailing" id="VEO-6d-E8R"/>
                     <constraint firstItem="h7v-T9-BmD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fGf-B4-YXa"/>
+                    <constraint firstItem="mfi-df-X1A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ho9-aa-FPk"/>
                     <constraint firstItem="h7v-T9-BmD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pgN-Hg-JD5"/>
-                    <constraint firstItem="mfi-df-X1A" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="uyl-9r-Fjp"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
