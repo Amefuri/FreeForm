@@ -56,6 +56,9 @@ public class FreeFormPushCell: FreeFormCell {
     
     private func optionDidSelected(option: String, row: FreeFormPushRow) {
         row.value = option as AnyObject?
+        if let changeBlock = row.didChanged {
+            changeBlock(option as AnyObject, row)
+        }
         self.update()
     }
     
