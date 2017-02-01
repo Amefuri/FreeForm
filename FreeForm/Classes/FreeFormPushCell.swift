@@ -22,8 +22,8 @@ public class FreeFormPushRow: FreeFormRow {
 
 public class FreeFormPushCell: FreeFormCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var valueLabel: UILabel!
+    @IBOutlet public weak var titleLabel: UILabel!
+    @IBOutlet public weak var valueLabel: UILabel!
     
     override public func update() {
         super.update()
