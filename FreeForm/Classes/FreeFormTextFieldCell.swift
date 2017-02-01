@@ -20,6 +20,11 @@ public class FreeFormTextFieldRow: FreeFormRow {
     }
     
     public func updateValidationState(result: ValidationResult) -> Bool {
+        
+        guard let value = self.value as? String, value != "" else {
+            return self.isOptional
+        }
+        
         switch result {
         case .invalid(let failures):
             self.validated = false

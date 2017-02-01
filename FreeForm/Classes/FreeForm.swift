@@ -88,6 +88,7 @@ open class FreeFormRow: NSObject {
     public var disable: Bool = false
     public var deletable: Bool = false
     public var validated: Bool = true
+    public var isOptional: Bool = false
     
     public var height: CGFloat = 55
     public var tintColor: UIColor = UIColor.blue
