@@ -19,9 +19,8 @@ public class FreeFormTextFieldRow: FreeFormRow {
         self.cellType = String(describing: FreeFormTextFieldCell.self)
     }
     
-    public func updateValidationState(result: ValidationResult) -> Bool {
-        
-        guard let value = self.value as? String, value != "" else {
+    public func updateValidationState(text: String, result: ValidationResult) -> Bool {
+        guard text != "" else {
             return self.isOptional
         }
         
@@ -62,7 +61,7 @@ public class FreeFormTextFieldCell: FreeFormCell {
         self.textField.validationRules = textfieldRow.validationRuleSet
         self.textField.validateOnInputChange(enabled: true)
         self.textField.validationHandler = { result in
-            if textfieldRow.updateValidationState(result: result) {
+            if textfieldRow.updateValidationState(text: value, result: result) {
                 self.clearError()
             }else {
                 if let message = textfieldRow.validationErrors?.joined(separator: "/") {
