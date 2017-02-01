@@ -17,6 +17,9 @@ open class FreeForm: NSObject {
     public var sections = FreeFormSections(array: [])
     public var title: String = ""
     public var reloadData: FreeFormReloadBlock?
+    public var validated: Bool {
+        return self.sections.validated
+    }
     
     public var numOfSections: Int {
         return self.sections.getShowingSection().count

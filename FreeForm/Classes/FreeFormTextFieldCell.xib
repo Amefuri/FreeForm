@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dek-fc-9aa">
@@ -30,16 +30,25 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PO9-4A-h3e">
+                        <rect key="frame" x="65" y="21.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.18889704334205315" blue="0.12094108306232387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="dek-fc-9aa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="004-rA-pYe"/>
+                    <constraint firstItem="PO9-4A-h3e" firstAttribute="leading" secondItem="dek-fc-9aa" secondAttribute="trailing" constant="5" id="BdP-s0-KNz"/>
                     <constraint firstItem="wq2-Ou-3oa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Kj3-er-VyY"/>
-                    <constraint firstItem="wq2-Ou-3oa" firstAttribute="leading" secondItem="dek-fc-9aa" secondAttribute="trailing" constant="10" id="ZCp-G1-YyK"/>
+                    <constraint firstItem="wq2-Ou-3oa" firstAttribute="leading" secondItem="PO9-4A-h3e" secondAttribute="trailing" constant="5" id="RRN-CY-CXS"/>
                     <constraint firstItem="dek-fc-9aa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aU9-E1-tom"/>
+                    <constraint firstItem="PO9-4A-h3e" firstAttribute="centerY" secondItem="dek-fc-9aa" secondAttribute="centerY" id="huM-QB-yG7"/>
                     <constraint firstAttribute="trailingMargin" secondItem="wq2-Ou-3oa" secondAttribute="trailing" constant="10" id="nGA-sl-cSX"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="errorLabel" destination="PO9-4A-h3e" id="7pB-hW-8GF"/>
                 <outlet property="textField" destination="wq2-Ou-3oa" id="ndd-IJ-4bB"/>
                 <outlet property="titleLabel" destination="dek-fc-9aa" id="QLA-O4-Mo5"/>
             </connections>

@@ -21,6 +21,7 @@ public class FreeFormTextFieldCell: FreeFormCell {
 
     @IBOutlet weak public var textField: UITextField!
     @IBOutlet weak public var titleLabel: UILabel!
+    @IBOutlet weak public var errorLabel: UILabel!
     
     override public func awakeFromNib() {
         super.awakeFromNib()
