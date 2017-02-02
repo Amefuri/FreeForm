@@ -77,6 +77,16 @@ open class FreeForm: NSObject {
         guard let block = self.reloadData else { return }
         block(reloadTableView)
     }
+    
+    open func validateTextField() {
+        for section in self.sections.getShowingSection() {
+            for row in section.rows.getShowingRow() {
+                guard let textFieldRow = row as? FreeFormTextFieldRow else { continue }
+                guard let cell = textFieldRow.cell as? FreeFormTextFieldCell else { continue }
+                cell.validateTextField()
+            }
+        }
+    }
 }
 
 open class FreeFormRow: NSObject {

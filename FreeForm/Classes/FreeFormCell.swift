@@ -19,6 +19,7 @@ public class FreeFormCell: UITableViewCell {
     
     public func setRowData(_ row: FreeFormRow) {
         self.row = row
+        row.cell = self
         self.update()
     }
     

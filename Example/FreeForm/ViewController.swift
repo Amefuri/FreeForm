@@ -12,6 +12,42 @@ import Validator
 
 class ViewController: FreeFormViewController {
     
+    struct FormRule {
+        static let requiredRule = ValidationRuleLength(min: 1, error: ValidationError.requiredData.error)
+        static let maxRule = ValidationRuleLength(max: 256, error: ValidationError.maxLength.error)
+        static let emailRule = ValidationRulePattern(pattern: EmailValidationPattern.standard, error: ValidationError.email.error)
+        static let citizenIdRule = ValidationRulePattern( pattern: "[0-9]{13}", error: ValidationError.citizenId.error)
+        static let passportRule = ValidationRulePattern(pattern: "[A-Za-z0-9]{7,9}", error: ValidationError.passport.error)
+    }
+    
+    enum ValidationError {
+        case requiredData
+        case email
+        case citizenId
+        case passport
+        case maxLength
+        case minLength
+        
+        var error: Error {
+            switch self {
+            case .requiredData:
+                return NSError.create("ยังไม่มีข้อมูล") as Error
+            case .email:
+                return NSError.create("ไม่ถูกต้อง (เช่น abc@xyz.com)") as Error
+            case .citizenId:
+                return NSError.create("ไม่ถูกต้อง (ต้องมีเฉพาะตัวเลข 13 หลัก)") as Error
+            case .passport:
+                return NSError.create("ไม่ถูกต้อง") as Error
+            case .maxLength:
+                return NSError.create("ยาวเกินไป") as Error
+            case .minLength:
+                return NSError.create("สั้นเกินไป") as Error
+            }
+        }
+        
+    }
+
+    
     var section1 = FreeFormSection(tag: "Demo1", title: "Demo1")
     var section2 = FreeFormSection(tag: "Demo2", title: "Demo2")
     var section3 = FreeFormSection(tag: "Demo3", title: "Demo3")
@@ -19,6 +55,7 @@ class ViewController: FreeFormViewController {
     let pushOptions = FreeFormPushRow(tag: "Push", title: "Seletect Somethings", value: "Hello", options: ["Hello", "Bye!"])
     let firstname = FreeFormTextFieldRow(tag: "FirstName", title: "FirstName", value: nil)
     let lastname = FreeFormTextFieldRow(tag: "LastName", title: "LastName", value: nil)
+    let email = FreeFormTextFieldRow(tag: "Email", title: "Email", value: nil)
     let text = FreeFormTextRow(tag: "Text", title: "Fullname", value: nil)
     let datetime = FreeFormDatetimeRow(tag: "Datetime", title: "Date", selectedDate: Date(),
                                        min: Calendar.current.date(byAdding: .day, value: -10, to: Date()),
@@ -39,8 +76,10 @@ class ViewController: FreeFormViewController {
             section.addRow(self.pushOptions)
             section.addRow(self.firstname)
             section.addRow(self.lastname)
+            section.addRow(self.email)
             section.addRow(self.text)
             section.addRow(self.datetime)
+            section.addRow(self.button)
             return section
         }()
         
@@ -54,7 +93,6 @@ class ViewController: FreeFormViewController {
         self.section3 = {
             let section = self.section3
             section.addRow(self.switchRow)
-            section.addRow(self.button)
             section.addRow(self.stepper)
             return section
         }()
@@ -76,6 +114,9 @@ class ViewController: FreeFormViewController {
             textfieldCell.textField.borderStyle = .roundedRect
             textfieldCell.textField.textColor = UIColor.green
         }
+        
+        self.email.validationRuleSet?.add(rule: FormRule.emailRule)
+        self.email.isOptional = true
         
         self.textView.customCell = { cell in
             guard let textViewCell = cell as? FreeFormTextViewCell else { return }
@@ -106,8 +147,12 @@ class ViewController: FreeFormViewController {
         }
         
         self.button.didTapped = { row in
-            self.button.title = (self.button.title == "Tap Me!!" ? "Yes! One more time" : "Tap Me!!")
-            self.form.reloadForm(true)
+            self.form.validateTextField()
+            if self.form.validated == true {
+                debugPrint("Pass")
+            }else {
+                debugPrint("Not Pass")
+            }
         }
         
         self.switchRow.didChanged = { value, row in
@@ -124,3 +169,27 @@ class ViewController: FreeFormViewController {
     }
 }
 
+
+extension NSError {
+    
+    static func create(_ message: String) -> NSError {
+        let userInfo = [
+            NSLocalizedDescriptionKey: NSLocalizedString(message,  comment: ""),
+            NSLocalizedFailureReasonErrorKey: NSLocalizedString(message, comment: ""),
+            NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString(message, comment: "")
+        ]
+        let error = NSError(domain: "com.fireoneone.hms", code: 999, userInfo: userInfo)
+        return error
+    }
+    
+    static func create(_ errorCode: Int, message: String) -> NSError {
+        let userInfo = [
+            NSLocalizedDescriptionKey: NSLocalizedString(message,  comment: ""),
+            NSLocalizedFailureReasonErrorKey: NSLocalizedString(message, comment: ""),
+            NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString(message, comment: "")
+        ]
+        let error = NSError(domain: "com.fireoneone.hms", code: errorCode, userInfo: userInfo)
+        return error
+    }
+    
+}
