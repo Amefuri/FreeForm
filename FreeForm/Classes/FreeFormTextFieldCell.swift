@@ -63,6 +63,7 @@ public class FreeFormTextFieldCell: FreeFormCell {
     override public func awakeFromNib() {
         super.awakeFromNib()
         self.textField.delegate = self
+        self.textField.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
     }
     
     override public func update() {
@@ -115,6 +116,14 @@ public class FreeFormTextFieldCell: FreeFormCell {
 }
 
 extension FreeFormTextFieldCell: UITextFieldDelegate {
+    
+    public func textFieldDidChange(textField: UITextField) {
+        guard let text = textField.text else { return }
+        row.value = textField.text as AnyObject?
+        if let changeBlock = row.didChanged {
+            changeBlock(textField.text! as AnyObject, row)
+        }
+    }
     
     public func textFieldDidEndEditing(_ textField: UITextField) {
         row.value = textField.text as AnyObject?
