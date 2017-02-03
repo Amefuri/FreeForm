@@ -52,8 +52,9 @@ open class FreeFormViewController: UITableViewController {
     }
     
     open func reloadForm() {
-        let indexSet = IndexSet(integersIn: NSRange(location: 0, length: self.form.numOfSections).toRange() ?? 0..<0)
-        self.tableView.reloadSections(indexSet, with: .automatic)
+        ///let indexSet = IndexSet(integersIn: NSRange(location: 0, length: self.form.numOfSections).toRange() ?? 0..<0)
+        //self.tableView.reloadSections(indexSet, with: .automatic)
+        self.tableView.reloadData()
     }
     
     // MARK: - Table view data source
