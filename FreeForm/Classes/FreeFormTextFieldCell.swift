@@ -68,6 +68,7 @@ public class FreeFormTextFieldCell: FreeFormCell {
     
     override public func update() {
         super.update()
+        self.clearError()
         guard let textfieldRow = self.row as? FreeFormTextFieldRow else { return }
         
         titleLabel.text = textfieldRow.title
