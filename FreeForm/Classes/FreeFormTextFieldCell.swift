@@ -81,20 +81,6 @@ public class FreeFormTextFieldCell: FreeFormCell {
         
         titleLabel.text = textfieldRow.title
         self.textField.validationRules = textfieldRow.validationRuleSet
-        self.textField.validateOnInputChange(enabled: true)
-        self.textField.validationHandler = { result in
-            
-            textfieldRow.validationErrors?.removeAll()
-            
-            if textfieldRow.updateValidationState(text: self.textField.text, result: result) {
-                self.clearError()
-            }else {
-                if let message = textfieldRow.validationErrors?.joined(separator: "/") {
-                    self.showError(message: message)
-                }
-            }
-            
-        }
         
         guard let value = textfieldRow.value as? String else {
             textField.text = ""
@@ -108,6 +94,7 @@ public class FreeFormTextFieldCell: FreeFormCell {
         guard let textfieldRow = self.row as? FreeFormTextFieldRow else { return }
         guard let rules = textfieldRow.validationRuleSet else { return }
         let result = self.textField.validate(rules: rules)
+        textfieldRow.validationErrors = [String]()
         if textfieldRow.updateValidationState(text: self.textField.text, result: result) {
             self.clearError()
         }else {
@@ -138,12 +125,12 @@ extension FreeFormTextFieldCell: UITextFieldDelegate {
         }
     }
     
-    public func textFieldDidEndEditing(_ textField: UITextField) {
-        row.value = textField.text as AnyObject?
-        if let changeBlock = row.didChanged {
-            changeBlock(textField.text! as AnyObject, row)
-        }
-    }
+//    public func textFieldDidEndEditing(_ textField: UITextField) {
+//        row.value = textField.text as AnyObject?
+//        if let changeBlock = row.didChanged {
+//            changeBlock(textField.text! as AnyObject, row)
+//        }
+//    }
     
     public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
