@@ -11,7 +11,11 @@ import Validator
 
 public class FreeFormTextFieldRow: FreeFormRow {
     
-    public var validationRuleSet: ValidationRuleSet<String>? = ValidationRuleSet<String>()
+    public var validationRuleSet: ValidationRuleSet<String>? = ValidationRuleSet<String>() {
+        didSet {
+            self.validationErrors = [String]()
+        }
+    }
     public var validationErrors: [String]?
     
     override public init(tag: String, title: String, value: AnyObject?) {
@@ -51,6 +55,10 @@ public class FreeFormTextFieldRow: FreeFormRow {
                 return true
             }
         }
+    }
+    
+    public func clearRules() {
+        self.validationRuleSet = ValidationRuleSet<String>()
     }
 }
 
