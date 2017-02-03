@@ -83,14 +83,17 @@ public class FreeFormTextFieldCell: FreeFormCell {
         self.textField.validationRules = textfieldRow.validationRuleSet
         self.textField.validateOnInputChange(enabled: true)
         self.textField.validationHandler = { result in
+            
+            textfieldRow.validationErrors?.removeAll()
+            
             if textfieldRow.updateValidationState(text: self.textField.text, result: result) {
                 self.clearError()
             }else {
                 if let message = textfieldRow.validationErrors?.joined(separator: "/") {
                     self.showError(message: message)
-                    self.clearError()
                 }
             }
+            
         }
         
         guard let value = textfieldRow.value as? String else {
@@ -110,7 +113,6 @@ public class FreeFormTextFieldCell: FreeFormCell {
         }else {
             if let message = textfieldRow.validationErrors?.joined(separator: "/") {
                 self.showError(message: message)
-                self.clearError()
             }
         }
     }
