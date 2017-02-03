@@ -88,6 +88,7 @@ public class FreeFormTextFieldCell: FreeFormCell {
             }else {
                 if let message = textfieldRow.validationErrors?.joined(separator: "/") {
                     self.showError(message: message)
+                    self.clearError()
                 }
             }
         }
@@ -109,6 +110,7 @@ public class FreeFormTextFieldCell: FreeFormCell {
         }else {
             if let message = textfieldRow.validationErrors?.joined(separator: "/") {
                 self.showError(message: message)
+                self.clearError()
             }
         }
     }
