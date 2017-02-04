@@ -69,7 +69,8 @@ public class FreeFormDatetimeCell: FreeFormCell {
             row.isExtended = true
         }
         
-        row.formViewController.reloadForm()
+        row.formViewController.tableView.beginUpdates()
+        row.formViewController.tableView.endUpdates()
     }
     
     @IBAction func datePickerValueChanged(_ sender: Any) {

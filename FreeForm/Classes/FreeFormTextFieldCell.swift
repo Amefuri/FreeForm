@@ -125,13 +125,6 @@ extension FreeFormTextFieldCell: UITextFieldDelegate {
         }
     }
     
-//    public func textFieldDidEndEditing(_ textField: UITextField) {
-//        row.value = textField.text as AnyObject?
-//        if let changeBlock = row.didChanged {
-//            changeBlock(textField.text! as AnyObject, row)
-//        }
-//    }
-    
     public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
         guard row.disable == false else { return false }
