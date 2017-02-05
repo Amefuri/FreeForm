@@ -8,46 +8,9 @@
 
 import UIKit
 import FreeForm
-import Validator
 
 class ViewController: FreeFormViewController {
-    
-    struct FormRule {
-        static let requiredRule = ValidationRuleLength(min: 1, error: ValidationError.requiredData.error)
-        static let maxRule = ValidationRuleLength(max: 256, error: ValidationError.maxLength.error)
-        static let emailRule = ValidationRulePattern(pattern: EmailValidationPattern.standard, error: ValidationError.email.error)
-        static let citizenIdRule = ValidationRulePattern( pattern: "[0-9]{13}", error: ValidationError.citizenId.error)
-        static let passportRule = ValidationRulePattern(pattern: "[A-Za-z0-9]{7,9}", error: ValidationError.passport.error)
-    }
-    
-    enum ValidationError {
-        case requiredData
-        case email
-        case citizenId
-        case passport
-        case maxLength
-        case minLength
-        
-        var error: Error {
-            switch self {
-            case .requiredData:
-                return NSError.create("ยังไม่มีข้อมูล") as Error
-            case .email:
-                return NSError.create("ไม่ถูกต้อง (เช่น abc@xyz.com)") as Error
-            case .citizenId:
-                return NSError.create("ไม่ถูกต้อง (ต้องมีเฉพาะตัวเลข 13 หลัก)") as Error
-            case .passport:
-                return NSError.create("ไม่ถูกต้อง") as Error
-            case .maxLength:
-                return NSError.create("ยาวเกินไป") as Error
-            case .minLength:
-                return NSError.create("สั้นเกินไป") as Error
-            }
-        }
-        
-    }
 
-    
     var section1 = FreeFormSection(tag: "Demo1", title: "Demo1")
     var section2 = FreeFormSection(tag: "Demo2", title: "Demo2")
     var section3 = FreeFormSection(tag: "Demo3", title: "Demo3")
@@ -115,9 +78,6 @@ class ViewController: FreeFormViewController {
             textfieldCell.textField.textColor = UIColor.green
         }
         
-        self.email.validationRuleSet?.add(rule: FormRule.emailRule)
-        self.email.isOptional = true
-        
         self.textView.customCell = { cell in
             guard let textViewCell = cell as? FreeFormTextViewCell else { return }
             textViewCell.titleLabel.textColor = UIColor.blue
@@ -147,11 +107,11 @@ class ViewController: FreeFormViewController {
         }
         
         self.button.didTapped = { row in
-            self.form.validateTextField()
-            if self.form.validated == true {
-                debugPrint("Pass")
+            guard let buttonCell = row.cell as? FreeFormButtonCell else { return }
+            if buttonCell.button.titleLabel?.text == "Tap Me!!" {
+                buttonCell.button.setTitle("Yes", for: .normal)
             }else {
-                debugPrint("Not Pass")
+                buttonCell.button.setTitle("Tap Me!!", for: .normal)
             }
         }
         

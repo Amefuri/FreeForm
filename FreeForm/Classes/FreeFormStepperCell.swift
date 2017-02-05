@@ -23,6 +23,7 @@ public class FreeFormStepperRow: FreeFormRow {
 
 public class FreeFormStepperCell: FreeFormCell {
 
+    @IBOutlet weak var subtractButtonTrailingConstraint: NSLayoutConstraint!
     @IBOutlet public weak var addButton: UIButton!
     @IBOutlet public weak var subtractButton: UIButton!
     @IBOutlet public weak var titleLabel: UILabel!
@@ -31,6 +32,7 @@ public class FreeFormStepperCell: FreeFormCell {
         super.awakeFromNib()
         self.addButton.layer.cornerRadius = 17
         self.subtractButton.layer.cornerRadius = 17 * 0.65
+        self.subtractButton.isHidden = true
     }
     
     override public func update() {
@@ -39,7 +41,11 @@ public class FreeFormStepperCell: FreeFormCell {
         
         guard let value = self.row.value as? Int else { return }
         guard let row = self.row as? FreeFormStepperRow else { return }
-        self.subtractButton.isHidden = value == row.minimumValue
+        if value == row.minimumValue {
+            self.hideSubTractButton()
+        }else {
+            self.showSubtractButton()
+        }
         
         if value == row.minimumValue {
             self.addButton.setTitle("+", for: .normal)
@@ -77,6 +83,34 @@ public class FreeFormStepperCell: FreeFormCell {
         
         guard let block = row.didChanged else { return }
         block(row.value as AnyObject, row)
+    }
+    
+    private func showSubtractButton() {
+        guard self.subtractButtonTrailingConstraint.constant == 10 else { return }
+        self.addButton.isEnabled = false
+        self.subtractButton.isHidden = false
+        self.subtractButton.alpha = 0
+        UIView.animate(withDuration: 0.17, delay: 0, options: .curveEaseIn, animations: {
+            self.subtractButton.alpha = 1
+            self.subtractButtonTrailingConstraint.constant = 44
+            self.layoutIfNeeded()
+        }) { (completed) in
+            self.addButton.isEnabled = true
+        }
+    }
+    
+    private func hideSubTractButton() {
+        guard self.subtractButtonTrailingConstraint.constant == 44 else { return }
+        self.addButton.isEnabled = false
+        self.subtractButton.alpha = 1
+        UIView.animate(withDuration: 0.17, delay: 0, options: .curveEaseOut, animations: {
+            self.subtractButton.alpha = 0
+            self.subtractButtonTrailingConstraint.constant = 10
+            self.layoutIfNeeded()
+        }) { (completed) in
+            self.subtractButton.isHidden = true
+            self.addButton.isEnabled = true
+        }
     }
     
 }
