@@ -23,7 +23,7 @@ open class FreeFormCell: UITableViewCell {
         self.update()
     }
     
-    public func update() {
+    open func update() {
         guard let row = self.row else { return }
         guard let block = row.customCell else { return }
         block(self)
