@@ -8,11 +8,11 @@
 
 import UIKit
 
-public class FreeFormCell: UITableViewCell {
+open class FreeFormCell: UITableViewCell {
 
     public var row: FreeFormRow!
     
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
     }
