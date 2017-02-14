@@ -9,6 +9,12 @@
 import UIKit
 import FreeForm
 
+class FreeTestRow: FreeFormRow {
+    override init(tag: String, title: String, value: AnyObject?) {
+        super.init(tag: tag, title: title, value: value)
+    }
+}
+
 class ViewController: FreeFormViewController {
 
     var section1 = FreeFormSection(tag: "Demo1", title: "Demo1")
