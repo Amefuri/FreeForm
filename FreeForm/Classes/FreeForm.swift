@@ -228,6 +228,11 @@ open class FreeFormSections: NSObject {
     }
     
     public func removeAll() {
+        
+        for section in self.array {
+            section.removeAllRows()
+        }
+        
         self.array.removeAll()
     }
 }
