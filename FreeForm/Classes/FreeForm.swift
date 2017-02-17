@@ -87,6 +87,10 @@ open class FreeForm: NSObject {
             }
         }
     }
+    
+    public func clearForm() {
+        self.sections.removeAll()
+    }
 }
 
 open class FreeFormRow: NSObject {
@@ -157,6 +161,9 @@ open class FreeFormRows: NSObject {
         self.array.append(row)
     }
     
+    public func removeAll() {
+        self.array.removeAll()
+    }
 }
 
 open class FreeFormSection: NSObject {
@@ -180,6 +187,10 @@ open class FreeFormSection: NSObject {
     
     open func addRow(_ row: FreeFormRow) {
         self.rows.appendRows(row)
+    }
+    
+    public func removeAllRows() {
+        self.rows.removeAll()
     }
 }
 
@@ -214,5 +225,9 @@ open class FreeFormSections: NSObject {
         }
         
         return array
+    }
+    
+    public func removeAll() {
+        self.array.removeAll()
     }
 }
