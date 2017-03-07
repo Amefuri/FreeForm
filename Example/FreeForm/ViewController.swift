@@ -52,6 +52,7 @@ class ViewController: FreeFormViewController {
             
             section.customHeader = { titleView in
                 titleView.backgroundColor = UIColor.red
+                
             }
             section.headerHeight =  40
             

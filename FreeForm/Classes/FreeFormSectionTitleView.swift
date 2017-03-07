@@ -8,9 +8,9 @@
 
 import UIKit
 
-open class FreeFormSectionTitleView: UIView {
+public class FreeFormSectionTitleView: UIView {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak public var titleLabel: UILabel!
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
