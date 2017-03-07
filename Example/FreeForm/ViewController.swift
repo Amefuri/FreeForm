@@ -49,6 +49,12 @@ class ViewController: FreeFormViewController {
             section.addRow(self.text)
             section.addRow(self.datetime)
             section.addRow(self.button)
+            
+            section.customHeader = { titleView in
+                titleView.backgroundColor = UIColor.red
+            }
+            section.headerHeight =  40
+            
             return section
         }()
         

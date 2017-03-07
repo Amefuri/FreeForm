@@ -9,6 +9,7 @@
 import UIKit
 
 public typealias FreeFormReloadBlock = (_ reloadData: Bool) -> Void
+public typealias FreeFormTitleViewBlock = (_ titleView: FreeFormSectionTitleView) -> Void
 public typealias FreeFormRowBlock = (_ row: FreeFormRow) -> Void
 public typealias FreeFormCellBlock = (_ cell: FreeFormCell) -> Void
 public typealias FreeFormValueRowBlock = (_ value: AnyObject, _ row: FreeFormRow) -> Void
@@ -171,10 +172,15 @@ open class FreeFormSection: NSObject {
     public var tag: String = ""
     public var title: String = ""
     public var footerTitle: String = ""
+    public var headerView: FreeFormSectionTitleView?
+    
+    public var headerHeight: CGFloat = 50
     
     public var hidden: Bool = false
     
     public var rows = FreeFormRows(array: [])
+    
+    public var customHeader: FreeFormTitleViewBlock?
     
     public var validated: Bool {
         return self.rows.validated

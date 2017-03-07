@@ -101,4 +101,20 @@ open class FreeFormViewController: UITableViewController {
         }
     }
     
+    open override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        let formSection = self.form.sections.getShowingSection()[section]
+        return formSection.headerHeight
+    }
+    
+    open override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let formSection = self.form.sections.getShowingSection()[section]
+        guard formSection.title.isEmpty == false else { return nil }
+        guard let headerView = FreeFormSectionTitleView.loadFromNib() else { return nil }
+        headerView.titleLabel.text = formSection.title
+        if let block = formSection.customHeader {
+            block(headerView)
+        }
+        return headerView
+    }
+    
 }
