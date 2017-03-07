@@ -17,9 +17,9 @@ class FreeTestRow: FreeFormRow {
 
 class ViewController: FreeFormViewController {
 
-    var section1 = FreeFormSection(tag: "Demo1", title: "Demo1")
+    var section1 = FreeFormSection(tag: "Demo1", title: "")
     var section2 = FreeFormSection(tag: "Demo2", title: "Demo2")
-    var section3 = FreeFormSection(tag: "Demo3", title: "Demo3")
+    var section3 = FreeFormSection(tag: "Demo3", title: "")
     
     let pushOptions = FreeFormPushRow(tag: "Push", title: "Seletect Somethings", value: "Hello", options: ["Hello", "Bye!"])
     let firstname = FreeFormTextFieldRow(tag: "FirstName", title: "FirstName", value: nil)
