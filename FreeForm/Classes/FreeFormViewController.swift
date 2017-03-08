@@ -108,7 +108,7 @@ open class FreeFormViewController: UITableViewController {
                 return 6.0
             }
             return 1.0
-        }
+        }   
         return formSection.headerHeight
     }
     
