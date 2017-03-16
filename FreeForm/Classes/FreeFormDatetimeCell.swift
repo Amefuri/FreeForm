@@ -40,6 +40,7 @@ public class FreeFormDatetimeCell: FreeFormCell {
     
     override public func awakeFromNib() {
         super.awakeFromNib()
+        self.datePicker.calendar = Calendar(identifier: .gregorian)
     }
     
     override public func update() {
