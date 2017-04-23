@@ -26,6 +26,14 @@ open class FreeForm: NSObject {
         return self.sections.getShowingSection().count
     }
     
+    public var noValueRows: FreeFormRows {
+        var blankValueRowArray = [FreeFormRow]()
+        self.sections.array.forEach { section in
+            blankValueRowArray = blankValueRowArray + section.rows.blankValueRows.array
+        }
+        return FreeFormRows(array: blankValueRowArray)
+    }
+    
     open func numOfRows(_ section: Int) -> Int {
         return self.sections.getShowingSection()[section].rows.numOfRows
     }
@@ -117,6 +125,10 @@ open class FreeFormRow: NSObject {
     public var cell: FreeFormCell?
     public var formViewController: FreeFormViewController!
     
+    public var isNoValue: Bool {
+        return (self.value == nil)
+    }
+    
     public init(tag: String, title: String, value: AnyObject?) {
         self.tag = tag
         self.title = title
@@ -145,6 +157,18 @@ open class FreeFormRows: NSObject {
         return true
     }
     
+    public var blankValueRows: FreeFormRows {
+        let blankRows = FreeFormRows(array: [])
+        
+        self.array.forEach { row in
+            if row.isNoValue {
+                blankRows.appendRows(row)
+            }
+        }
+        
+        return blankRows
+    }
+    
     public init(array: [FreeFormRow]) {
         self.array = array
     }
@@ -165,6 +189,7 @@ open class FreeFormRows: NSObject {
     public func removeAll() {
         self.array.removeAll()
     }
+
 }
 
 open class FreeFormSection: NSObject {
