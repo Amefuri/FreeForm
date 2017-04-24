@@ -126,6 +126,9 @@ open class FreeFormRow: NSObject {
     public var formViewController: FreeFormViewController!
     
     public var isNoValue: Bool {
+        if let stringValue = self.value as? String {
+            return (stringValue.isEmpty || stringValue == "")
+        }
         return (self.value == nil)
     }
     
