@@ -38,9 +38,13 @@ public class FreeFormTextFieldRow: FreeFormRow {
                         return true
                     }
                 }else {
+                    self.validated = true
+                    self.validationErrors?.removeAll()
                     return true
                 }
             }else {
+                self.validated = true
+                self.validationErrors?.removeAll()
                 return true
             }
         }else {
