@@ -121,7 +121,7 @@ public class FreeFormTextFieldCell: FreeFormCell {
 
 extension FreeFormTextFieldCell: UITextFieldDelegate {
     
-    public func textFieldDidChange(textField: UITextField) {
+  @objc public func textFieldDidChange(textField: UITextField) {
         guard let text = textField.text else { return }
         row.value = textField.text as AnyObject?
         if let changeBlock = row.didChanged {

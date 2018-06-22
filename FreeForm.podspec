@@ -9,6 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FreeForm'
   s.version          = '0.1.02'
+  s.swift_version    = '4.0'
   s.summary          = 'A simple block-based form viewcontroller.'
 
 # This description is used to generate tags and improve search results.
@@ -38,5 +39,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Validator', '~> 2.1.1'
+  s.dependency 'Validator', '~> 3.0.2'
 end
