@@ -93,7 +93,7 @@ open class FreeFormViewController: UITableViewController {
         return row.deletable
     }
     
-    override open func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override open func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
             let row = self.form.getRow(indexPath)
             guard let block = row.didDeleted else { return }

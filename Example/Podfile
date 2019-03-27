@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'FreeForm_Example' do
   pod 'FreeForm', :path => '../'
-  pod 'Validator', '~> 3.0.2'
+  pod 'Validator', '~> 3.1.1'
   
   target 'FreeForm_Tests' do
     inherit! :search_paths

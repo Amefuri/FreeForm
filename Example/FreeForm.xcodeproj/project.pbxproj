@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		093C40A4ACF0878574616F7B /* Pods_FreeForm_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88681302349A5690BCA432E7 /* Pods_FreeForm_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		EEB4EBD7730201C1231FEF72 /* Pods_FreeForm_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9406AC710E3079782B84D9A8 /* Pods_FreeForm_Tests.framework */; };
+		79D4BC7C42B026D95FA3567C /* Pods_FreeForm_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BFDBFC415619447C11F4B4 /* Pods_FreeForm_Tests.framework */; };
+		C8E4968CBF030946A2F7F3F3 /* Pods_FreeForm_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC7963DFEA2BE7A3A32F292 /* Pods_FreeForm_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0ED1E4BFE916CF0C3450DF61 /* FreeForm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FreeForm.podspec; path = ../FreeForm.podspec; sourceTree = "<group>"; };
+		04BFDBFC415619447C11F4B4 /* Pods_FreeForm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeForm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED1E4BFE916CF0C3450DF61 /* FreeForm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FreeForm.podspec; path = ../FreeForm.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		217EEAB27BE5CA4C4BDC3CB2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3A64065DAC5EA634A734BA45 /* Pods-FreeForm_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeForm_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5EBDCC4A71A5972C398B4C22 /* Pods-FreeForm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeForm_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeForm_Tests/Pods-FreeForm_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* FreeForm_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeForm_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +42,11 @@
 		607FACE51AFB9204008FA782 /* FreeForm_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeForm_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7C1459358D2D4D9E10C72A1E /* Pods-FreeForm_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeForm_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		88681302349A5690BCA432E7 /* Pods_FreeForm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeForm_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9406AC710E3079782B84D9A8 /* Pods_FreeForm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeForm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E38B4D3194EA4FCABB6AF1B2 /* Pods-FreeForm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeForm_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeForm_Tests/Pods-FreeForm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		859B1BE234083528950FEA02 /* Pods-FreeForm_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeForm_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D1F9763E305C72848266FDB /* Pods-FreeForm_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeForm_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A6AA1C0316A2949F23BACC54 /* Pods-FreeForm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeForm_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeForm_Tests/Pods-FreeForm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E92242536AB4682A51AFF043 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FCD3E4C19BD10CC91FA3924C /* Pods-FreeForm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeForm_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeForm_Tests/Pods-FreeForm_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FAC7963DFEA2BE7A3A32F292 /* Pods_FreeForm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeForm_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				093C40A4ACF0878574616F7B /* Pods_FreeForm_Example.framework in Frameworks */,
+				C8E4968CBF030946A2F7F3F3 /* Pods_FreeForm_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,22 +62,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB4EBD7730201C1231FEF72 /* Pods_FreeForm_Tests.framework in Frameworks */,
+				79D4BC7C42B026D95FA3567C /* Pods_FreeForm_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E5EEA510B4E7858F455F8F6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				88681302349A5690BCA432E7 /* Pods_FreeForm_Example.framework */,
-				9406AC710E3079782B84D9A8 /* Pods_FreeForm_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +76,8 @@
 				607FACD21AFB9204008FA782 /* Example for FreeForm */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				8A47725224B880ABBAF07EAE /* Pods */,
-				3E5EEA510B4E7858F455F8F6 /* Frameworks */,
+				EEA97F122FB4D46B5986D536 /* Pods */,
+				88548D8E3A3BC621CF2B2D84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,13 +139,22 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		8A47725224B880ABBAF07EAE /* Pods */ = {
+		88548D8E3A3BC621CF2B2D84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C1459358D2D4D9E10C72A1E /* Pods-FreeForm_Example.debug.xcconfig */,
-				3A64065DAC5EA634A734BA45 /* Pods-FreeForm_Example.release.xcconfig */,
-				E38B4D3194EA4FCABB6AF1B2 /* Pods-FreeForm_Tests.debug.xcconfig */,
-				FCD3E4C19BD10CC91FA3924C /* Pods-FreeForm_Tests.release.xcconfig */,
+				FAC7963DFEA2BE7A3A32F292 /* Pods_FreeForm_Example.framework */,
+				04BFDBFC415619447C11F4B4 /* Pods_FreeForm_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEA97F122FB4D46B5986D536 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				859B1BE234083528950FEA02 /* Pods-FreeForm_Example.debug.xcconfig */,
+				9D1F9763E305C72848266FDB /* Pods-FreeForm_Example.release.xcconfig */,
+				A6AA1C0316A2949F23BACC54 /* Pods-FreeForm_Tests.debug.xcconfig */,
+				5EBDCC4A71A5972C398B4C22 /* Pods-FreeForm_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -166,11 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "FreeForm_Example" */;
 			buildPhases = (
-				8612308161EE706D2B9AEE64 /* [CP] Check Pods Manifest.lock */,
+				A213C25058FA74BF40D0C053 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				D007A1CE49C1C93AD3059453 /* [CP] Embed Pods Frameworks */,
+				414ED283AAB48AE1230A51A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,7 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "FreeForm_Tests" */;
 			buildPhases = (
-				29D6F7139154EDA9D3615340 /* [CP] Check Pods Manifest.lock */,
+				83EF772476AB8E6F5E751C9F /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -212,12 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = PDE65S5MLH;
+						DevelopmentTeam = Y35CVJZCJ5;
 						LastSwiftMigration = 0810;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = PDE65S5MLH;
+						DevelopmentTeam = Y35CVJZCJ5;
 						LastSwiftMigration = 0810;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -228,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -263,16 +264,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29D6F7139154EDA9D3615340 /* [CP] Check Pods Manifest.lock */ = {
+		414ED283AAB48AE1230A51A1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FreeForm/FreeForm.framework",
+				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FreeForm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83EF772476AB8E6F5E751C9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-FreeForm_Tests-checkManifestLockResult.txt",
 			);
@@ -281,42 +310,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8612308161EE706D2B9AEE64 /* [CP] Check Pods Manifest.lock */ = {
+		A213C25058FA74BF40D0C053 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-FreeForm_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D007A1CE49C1C93AD3059453 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FreeForm/FreeForm.framework",
-				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FreeForm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeForm_Example/Pods-FreeForm_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -453,39 +466,41 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C1459358D2D4D9E10C72A1E /* Pods-FreeForm_Example.debug.xcconfig */;
+			baseConfigurationReference = 859B1BE234083528950FEA02 /* Pods-FreeForm_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PDE65S5MLH;
+				DEVELOPMENT_TEAM = Y35CVJZCJ5;
 				INFOPLIST_FILE = FreeForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A64065DAC5EA634A734BA45 /* Pods-FreeForm_Example.release.xcconfig */;
+			baseConfigurationReference = 9D1F9763E305C72848266FDB /* Pods-FreeForm_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PDE65S5MLH;
+				DEVELOPMENT_TEAM = Y35CVJZCJ5;
 				INFOPLIST_FILE = FreeForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E38B4D3194EA4FCABB6AF1B2 /* Pods-FreeForm_Tests.debug.xcconfig */;
+			baseConfigurationReference = A6AA1C0316A2949F23BACC54 /* Pods-FreeForm_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = PDE65S5MLH;
+				DEVELOPMENT_TEAM = Y35CVJZCJ5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -495,27 +510,29 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCD3E4C19BD10CC91FA3924C /* Pods-FreeForm_Tests.release.xcconfig */;
+			baseConfigurationReference = 5EBDCC4A71A5972C398B4C22 /* Pods-FreeForm_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = PDE65S5MLH;
+				DEVELOPMENT_TEAM = Y35CVJZCJ5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

@@ -1,7 +1,7 @@
 {
   "name": "FreeForm",
   "version": "0.1.02",
-  "swift_version": "4.0",
+  "swift_version": "4.2",
   "summary": "A simple block-based form viewcontroller.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/clonezer/FreeForm",
@@ -17,7 +17,7 @@
     "tag": "0.1.02"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "FreeForm/Classes/**/*",
   "resource_bundles": {
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "Validator": [
-      "~> 3.0.2"
+      "~> 3.1.1"
     ]
   }
 }

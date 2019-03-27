@@ -75,7 +75,7 @@ public class FreeFormTextFieldCell: FreeFormCell {
     override public func awakeFromNib() {
         super.awakeFromNib()
         self.textField.delegate = self
-        self.textField.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
+        self.textField.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControl.Event.editingChanged)
     }
     
     override public func update() {

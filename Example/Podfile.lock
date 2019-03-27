@@ -1,14 +1,14 @@
 PODS:
   - FreeForm (0.1.02):
-    - Validator (~> 3.0.2)
-  - Validator (3.0.2)
+    - Validator (~> 3.1.1)
+  - Validator (3.1.1)
 
 DEPENDENCIES:
   - FreeForm (from `../`)
-  - Validator (~> 3.0.2)
+  - Validator (~> 3.1.1)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Validator
 
 EXTERNAL SOURCES:
@@ -16,9 +16,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FreeForm: 523672f89d3d6c9f74df809ab1681430a2f150f6
-  Validator: bf211c1d71b3f910d230c09c70e62429d0fef63a
+  FreeForm: dbecd02e9cd575e2b0ed1729e0aa956a63568c78
+  Validator: b34ab17a8fffd0c1ffd8f9002ead4d1e02cd9e6e
 
-PODFILE CHECKSUM: fb7d0192d268492fb47180a28e93c4486d825ea1
+PODFILE CHECKSUM: aa109ebbf511d77d49574af6ee247d27ce7d4a27
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
